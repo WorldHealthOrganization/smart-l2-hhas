@@ -1,8 +1,8 @@
-id: smart.who.int.dak-empty # Replace "empty" with the health domain abbreviation
-canonical: http://smart.who.int/dak-empty # Replace "empty" with the health domain abbreviation
-name: DAKEmpty # Replace "empty" with the health domain abbreviation
-title: SMART DAK Empty # Replace "empty" with the health domain abbreviation
-description: An empty Digital Adaptation Kit (DAK) Implementation Guide to be used as a starting point for publishing SMART DAK content # Update the description
+id: smart.who.int.l2-hhas
+canonical: http://smart.who.int/l2-hhas
+name: L2hhas
+title: SMART L2 HHAS
+description: SMART Guidelines L2 for Heat-Health Alert System (HHAS) is a set of specifications for the implementation of a Heat-Health Alert System. It provides a framework for countries to adapt and implement heat-health alert systems to protect public health during extreme heat events.
 status: draft # draft | active | retired | unknown. The status should be set to "active" for a release candidate, in a branch dedicated for the release candidate.
 version: 0.1.0 # Update the version according to the assigned version number for the release. 
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -35,8 +35,8 @@ pages:
       title: License
   business-requirements.md:
     title: Business Requirements
-    concepts.md:
-      title: Concepts
+    health-interventions.md:
+      title: Health Interventions
     personas.md:
       title: Generic Personas
     scenarios.md:
@@ -103,7 +103,7 @@ menu:
     References: references.html
     Adapting Guidelines for Country use: adapting.html
   Business Requirements: 
-    Concepts: concepts.html
+    Health Interventions: health-interventions.html
     Generic Personas: personas.html
     User Scenarios: scenarios.html
     Business Processes: business-processes.html

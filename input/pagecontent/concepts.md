@@ -1,1 +1,0 @@
-Please consult the "Glossary" section of the <mark>[insert health domain here]</mark> DAK for the key terms and the "Abbreviations" section for the abbreviations used in the DAK.
