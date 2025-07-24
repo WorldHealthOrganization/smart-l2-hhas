@@ -18,54 +18,59 @@ The following table describes the workflows of the included processes.
       <th><strong>Process ID</strong> </th>
       <th><strong>Personas</strong> </th>
       <th><strong>Objectives</strong> </th>
+      <th><strong>Task set</strong> </th>
     </tr>
  </thead>
  <tbody>
     <tr class="odd">
       <td>1</td>
-      <td>Registration</td>
-      <td>PNC.A</td>
-      <td>Woman, Newborn/infant, Health workers (one or more 
-of:  community health worker (CHW), Nursing associate professional, or Midwifery associate professional.)</td>
-      <td>To identify and register or update registration information for a postpartum woman and/or newborn/infant so that she and/or the newborn/infant can proceed to the PNC (first or follow-up) contact</td>
+      <td>Issue and disseminate a heat event alert</td>
+      <td>HHAS.A</td>
+      <td>•	National Alert Generating Agency <br>•	National Alert Authorizing Agency <br>•	Alert Aggregator
+</td>
+      <td>To issue a CAP alert, decide on its dissemination  and send targeted messages to health care facilities/health care workers.</td>
+      <td><i>Starting point: The National Alert Generating Agency issues a CAP alert for a heat event and sends it to the National Alert Authorizing Agency.</i> <br>
+      •	Issue a heat event CAP alert <br>
+•	Decide on alert dissemination authorization <br>
+•	Generate targeted message(s) <br>
+•	Identify the cohort of health facilities/health care workers <br>
+•	Send targeted message(s) 
+ </td>
     </tr>
      <tr class="odd">
       <td>2</td>
-      <td>PNC contact within first 24 hours</td>
-      <td>PNC.B</td>
-      <td>Woman, Newborn, Health workers (one or more 
-of: CHW, Nursing associate professional or midwifery associate 
-professional, Nurse, Midwife, Generalist medical doctor, Specialist medical doctor, or Social work professional)</td>
-      <td>To provide routine PNC services and counselling to the postpartum woman and newborn within the first 24 hours after birth</td>
-    </tr>
-     <tr class="odd">
-      <td>3</td>
-      <td>Emergency referral</td>
-      <td>PNC.C</td>
-      <td>Woman, Newborn/infant, Health workers (one or more 
-of: CHW, Nursing associate professional or midwifery associate 
-professional, Nurse, Midwife, Generalist medical doctor or Specialist medical doctor)</td>
-      <td>To provide emergency referrals within a health facility, or to a higher-level health facility</td>
-    </tr>
-    <tr class="odd">
-      <td>4</td>
-      <td>PNC follow-up contact</td>
-      <td>PNC.D</td>
-      <td>Woman, Newborn/infant, Health workers (one or more 
-of: CHW, Nursing associate professional or midwifery associate 
-professional, Nurse, Midwife or Social work professional)</td>
-      <td>To provide routine follow-up PNC services and counselling in health facility or at home.</td>
-    </tr>
-       <tr class="odd">
-      <td>5</td>
-      <td>Reporting on aggregate indicators </td>
-      <td>PNC.E</td>
-      <td>Nursing associate professional or midwifery associate 
-professional, Health service manager (at facility or district level)</td>
-      <td>Compile and submit relevant data registered in the digital system contributing to indicators and other reporting needs on a routine basis</td>
+      <td>Implement HHAP</td>
+      <td>HHAS.B</td>
+      <td>•	Health-care facility manager <br>
+•	Health-care worker/ Social care worker
+</td>
+      <td>To acknowledge the reception and understanding of the information provided within a CAP alert and act on targeted message(s).</td>
+      <td><i>Starting point: The health facility manager/health care worker receives the targeted message(s) in the form of a CAP alert.</i> <br>
+      •	Acknowledge the message(s) reception <br>
+•	<i>(Health facility manager)</i> Send message(s) to health-care workers <br>
+•	<i>(Health care worker)</i> Act on targeted message(s)
+
+ </td>
     </tr>
   </tbody>
 </table>
 
 <!-- Insert below the link to the archive uploaded in ...input/business-processes -->
 The source files of the business processes designed for this guide can be downloaded [here](HHAS L2_BPMN files.zip).
+
+
+<img src="./HHAS_A.svg" style="width:60%; align:center"/>
+<br clear="all"/>
+
+**"HHAS.A Issue and disseminate a heat event alert" business process notes and annotations**
+
+1. Issue a heat event CAP alert: 
+    - The National Alert Generating Agency issues a CAP alert for a heat event and sends it to the National Alert Authorizing Agency.
+2. bfgbgf
+
+
+<img src="./HHAS_B.svg" style="width:60%; align:center"/>
+<br clear="all"/>
+
+
+**"HHAS.B Implement HHAP" business process notes and annotations**

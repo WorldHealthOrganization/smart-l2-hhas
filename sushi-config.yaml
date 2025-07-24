@@ -35,6 +35,8 @@ pages:
       title: License
   business-requirements.md:
     title: Business Requirements
+    concepts.md:
+      title: Concepts
     health-interventions.md:
       title: Health Interventions
     personas.md:
@@ -101,8 +103,9 @@ menu:
     Changes: changes.html
     Dependencies: dependencies.html
     References: references.html
-    Adapting Guidelines for Country use: adapting.html
-  Business Requirements: 
+    Adapting and implementing: adapting.html
+  Business Requirements:
+    Concepts: concepts.html
     Health Interventions: health-interventions.html
     Generic Personas: personas.html
     User Scenarios: scenarios.html
