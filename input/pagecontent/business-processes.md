@@ -26,14 +26,14 @@ The following table describes the workflows of the included processes.
       <td>1</td>
       <td>Issue and disseminate a heat event alert</td>
       <td>HHAS.A</td>
-      <td>•	National Alert Generating Agency <br>•	National Alert Authorizing Agency <br>•	Alert Aggregator
+      <td>•	National Alert Generating Agency <br>•	National Alert Authorizing Agency <br>•	Alerting Officer
 </td>
       <td>To issue a CAP alert, decide on its dissemination  and send targeted messages to health care facilities/health care workers.</td>
       <td><i>Starting point: The National Alert Generating Agency issues a CAP alert for a heat event and sends it to the National Alert Authorizing Agency.</i> <br>
       •	Issue a heat event CAP alert <br>
 •	Decide on alert dissemination authorization <br>
 •	Generate targeted message(s) <br>
-•	Identify the cohort of health facilities/health care workers <br>
+•	Review and validate the list of recipients <br>
 •	Send targeted message(s) 
  </td>
     </tr>
@@ -42,7 +42,7 @@ The following table describes the workflows of the included processes.
       <td>Implement HHAP</td>
       <td>HHAS.B</td>
       <td>•	Health-care facility manager <br>
-•	Health-care worker/ Social care worker
+•	Health-care worker
 </td>
       <td>To acknowledge the reception and understanding of the information provided within a CAP alert and act on targeted message(s).</td>
       <td><i>Starting point: The health facility manager/health care worker receives the targeted message(s) in the form of a CAP alert.</i> <br>
@@ -55,22 +55,13 @@ The following table describes the workflows of the included processes.
   </tbody>
 </table>
 
-<!-- Insert below the link to the archive uploaded in ...input/business-processes -->
-The source files of the business processes designed for this guide can be downloaded [here](HHAS L2_BPMN files.zip).
+
+The picture below presents the expanded view of the business processes included in this guide.
 
 
-<img src="./HHAS_A.svg" style="width:60%; align:center"/>
+<img src="./All_processes_expanded_v2.png" style="width:60%; align:center"/>
 <br clear="all"/>
 
-**"HHAS.A Issue and disseminate a heat event alert" business process notes and annotations**
-
-1. Issue a heat event CAP alert: 
-    - The National Alert Generating Agency issues a CAP alert for a heat event and sends it to the National Alert Authorizing Agency.
-2. bfgbgf
-
-
-<img src="./HHAS_B.svg" style="width:60%; align:center"/>
-<br clear="all"/>
-
-
-**"HHAS.B Implement HHAP" business process notes and annotations**
+Notes: 
+- "Issue HEAT-HEALTH action plan" is part of the process but is out of scope in this iteration (coloured in purple in the diagram);
+- The source file of the business processes designed for this guide can be downloaded [here](HHAS L2_BPMN files.zip).
