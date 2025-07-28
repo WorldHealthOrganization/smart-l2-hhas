@@ -7,8 +7,8 @@ The table below presents the versions of the data dictionary.
 
 | Version | Link |
 |---|---|
-| current* | HHAS L2_core data dictionary.xlsx](HHAS L2_core data dictionary.xlsx) |
-|0.1.0 | [HHAS L2_core data dictionary.xlsx](https://worldhealthorganization.github.io/smart-l2-hhas/v0.1.0/HHAS L2_core data dictionary.xlsx) |
+| current* | [HHAS L2_core data dictionary.xlsx](HHAS L2_core data dictionary.xlsx) |
+|0.1.0 | [HHAS L2_core data dictionary.xlsx](https://worldhealthorganization.github.io/smart-l2-hhas/v0.1.0/HAS L2_core data dictionary.xlsx) |
 
 *The current link indicates the latest release of the file. Note: the file's latest release might not always match the release number of the Implementation Guide.
 
