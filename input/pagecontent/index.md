@@ -64,12 +64,12 @@ The following assumptions are made about Member States' responsibilities as foun
 References used in this implementation guide are listed below:
 
 - [Heat and health in the WHO European Region: updated evidence for effective prevention. World Health Organization. Regional Office for Europe. 2021](https://iris.who.int/handle/10665/339462);
-- [Updating the evidence related to heat–health action planning: 21–22 November 2018, Bonn, Germany: meeting report. World Health Organization. Regional Office for Europe. 2019](https://iris.who.int/handle/10665/346259);
+- [Updating the evidence related to heat-health action planning: 21-22 November 2018, Bonn, Germany: meeting report. World Health Organization. Regional Office for Europe. 2019](https://iris.who.int/handle/10665/346259);
 - [Improving public health responses to extreme weather/heat-waves: EuroHEAT: technical summary. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107935);
 - [Report of a scoping meeting for the selection of indicators to monitor the impact of extreme heat on maternal, newborn and child health: Geneva, Switzerland, 24-25 April 2023. World Health Organization. 2024](https://iris.who.int/handle/10665/378102);
 - [Public health advice on preventing health effects of heat: new and updated information for different audiences. World Health Organization. Regional Office for Europe. 2011](https://iris.who.int/handle/10665/341580);
 - [EuroHEAT: improving public health responses to extreme weather/heat-waves: summary for policy-makers. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107934);
-- [Heat–health action plans: guidance. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107888);
+- [Heat-health action plans: guidance. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107888);
 - [Heat-waves: risks and responses. World Health Organization. Regional Office for Europe. 2004](https://iris.who.int/handle/10665/107552).
 
 Other, non-WHO, references used in this implementation guide are listed below:
