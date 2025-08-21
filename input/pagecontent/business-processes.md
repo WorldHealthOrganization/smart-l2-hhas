@@ -44,7 +44,7 @@ The following table describes the workflows of the included processes.
     </ul>
  </td>
     </tr>
-     <tr class="odd">
+     <tr class="even">
       <td>2</td>
       <td>Implement HHAP operational plan</td>
       <td>HHAS.B</td>
@@ -56,25 +56,25 @@ The following table describes the workflows of the included processes.
             <li>Client</li>
         </ul>
     </td>
-      <td>To acknowledge the reception and understanding of the information provided within a CAP alert and act on targeted message(s).</td>
-      <td><i>Starting point: The health facility manager/health care worker receives the targeted message(s).</i> <br>
-    <ul>
-    <li>Acknowledge the message(s) reception</li>
-    <li>(Health facility manager)</i> Send message(s) to health-care workers</li>
-    <li>(Health care worker)</i> Act on targeted message(s):</li>
+    <td>To acknowledge the reception and understanding of the information provided within a CAP alert and act on targeted message(s).</td>
+    <td><i>Starting point: The health facility manager/health care worker receives the targeted message(s).</i> <br>
         <ul>
-            <li>Perform actions that reduce occupational heat stress;</li>
-            <li>Evaluate client symptoms against case definition;</li>
-            <li>Report cases that meet the heat-related case definition.</li>
+            <li>Acknowledge the message(s) reception</li>
+            <li><i>(Health facility manager)</i> Send message(s) to health-care workers</li>
+            <li><i>(Health care worker)</i> Act on targeted message(s):
+                <ul>
+                    <li>Perform actions that reduce occupational heat stress;</li>
+                    <li>Evaluate client symptoms against case definition;</li>
+                    <li>Report cases that meet the heat-related case definition.</li>
+                </ul>
+            </li>
+            <li><i>(Surveillance officer)</i> Conduct heat event investigation </li>
+            <li><i>(Surveillance officer)</i> Compile and submit heat event report </li>
         </ul>
-    <li>(Surveillance officer)</i> Conduct heat event investigation <br>
-    <li>(Surveillance officer)</i> Compile and submit heat event report <br>
-    </ul>
- </td>
+    </td>
     </tr>
   </tbody>
 </table>
-
 
 The picture below presents the expanded view of the business processes included in this guide.
 
@@ -98,7 +98,6 @@ Notes:
       <li>The National Alert Generating Agency uses climatological information and weather forecasts to identify upcoming heat events. Estimations concluding that predefined thresholds will be breached represent the trigger point for a HHAS workflow. The decision to issue or not a heat event alert should be determined from close collaboration of climate, weather, and health communities and policy developers and represents a judgment call of the group of people involved in the decision-making process.</li>
     </ul>
   </li>
-
   <li>Issue a heat event CAP alert (“Alert”)
     <ul>
       <li>The Alert originator issues a heat event alert in the form of a Common Alerting Protocol (CAP) alert;</li>
@@ -115,7 +114,6 @@ Notes:
       </li>
     </ul>
   </li>
-
   <li>Decide on Alert dissemination authorization
     <ul>
       <li>The National Alert Authorizing Agency decides if the alert needs to be disseminated to health care facilities and/or healthcare workers. If available, decision-support logic integrated into the HHAS can help with the decision-making process;</li>
@@ -123,33 +121,28 @@ Notes:
       <li>Based on the co-design process, the Alert Authorizing Agency should make an interpretation of the hazard forecasts and impact estimates. Contextual factors, such as concurrent hazards which may hamper the population's ability to adapt their behaviours or environments (e.g., wildfires), pressures on the delivery of health and social care services (e.g., COVID-19 pandemic) and other indirect factors that might determine the general level of heat-related vulnerability such as the cost of energy for cooling.</li>
     </ul>
   </li>
-
   <li>Dissemination to health-care workers authorized?
     <ul>
       <li>The Alert dissemination may be approved or disapproved;</li>
       <li>If approved, the system may include a confirmation of approval before further dissemination.</li>
     </ul>
   </li>
-
   <li>Review the system generated message(s)
     <ul>
       <li>Once approved, the HHAS enhances automatically the Alert content with guidance from the HHAP, based on pre-defined logic;</li>
       <li>The Alerting Officer receives a notification via the HHAS of a new Alert on subscribed CAP Feed and reviews the Alert, including the enhancements proposed by the HHAS.</li>
     </ul>
   </li>
-
   <li>Adaptation needed?
     <ul>
       <li>The Alerting Officer determines if any additional enhancements are required for needs contextualized to the regions of impact.</li>
     </ul>
   </li>
-
   <li>Determine if direct dissemination to health workers is necessary
     <ul>
       <li>The Alerting Officer follows the operational guidance from the local Heat Health Action Plan to determine if the alert must be sent directly to health care workers as well or only to healthcare facilities (health service managers).</li>
     </ul>
   </li>
-
   <li>Retrieve and review the list of recipients
     <ul>
       <li>The affected area indicated in the Alert is the main criterion used to determine who are the recipients of the message;</li>
@@ -157,29 +150,23 @@ Notes:
       <li>The HHAS can automatically retrieve the list of recipients from the health facilities registry and/or health workers registry if those are available and interoperable with the HHAS. The Alerting Officer can review and update the list, for example add or remove recipients, as necessary.</li>
     </ul>
   </li>
-
   <li>Send targeted message(s)
     <ul>
       <li>The Alert, containing targeted information, is sent to the health care facilities and/or health care workers via appropriate distribution mechanisms.</li>
     </ul>
   </li>
-
   <li>Targeted message(s) for health service managers sent</li>
-
   <li>Acknowledgment received for message(s) delivered to health service managers
     <ul>
       <li>The acknowledgement messages, sent via explicit acknowledgment actions or implicitly via system mechanisms, are received. This event closes the alert dissemination to health service managers workflow.</li>
     </ul>
   </li>
-
   <li>Targeted message(s) for health care workers sent</li>
-
   <li>Acknowledgment received for message(s) delivered to health care workers
     <ul>
       <li>The acknowledgement messages, sent via explicit acknowledgment actions or implicitly via system mechanisms, are received. This event closes the alert dissemination to health care workers workflow.</li>
     </ul>
   </li>
-
   <li>Generate targeted message(s) with extra guidance
     <ul>
       <li>The CAP message should be adapted based on the contextual factors of the heat event alert. In addition to the CAP standard elements (urgency, severity, certainty, etc.) included in the CAP alert provided by the Alert Generating Agency, contextualized details should be included, such as the potential impacts, disaggregated by vulnerable groups, and clear actions to reduce risk. Risk messaging can be co-developed in advance of a hazard with affected populations to help increase their preparation, based on the level of severity;</li>
@@ -189,11 +176,6 @@ Notes:
   </li>
 </ol>
 
-<hr>
-
-<section id="footnotes">
-  
-</section>
 
 #### B. Business process for implementing HHAP operational plan
 
@@ -207,7 +189,6 @@ Notes:
       <li>The targeted message(s) with guidance based on the HHAP and any extra local specificity is received by the health service managers. The managers should thoughtfully assess whether all the actions suggested in the messages are appropriate for their specific work environments, prioritizing the health and wellbeing of both clients (or patients) and staff.</li>
     </ul>
   </li>
-
   <li>Acknowledgement sent for reception of targeted message(s) for managers
     <ul>
       <li>The acknowledgement can be done:<br>
@@ -218,20 +199,18 @@ Notes:
       </li>
     </ul>
   </li>
-
   <li>Send message(s) to healthcare workers
     <ul>
       <li>Message(s) is(are) disseminated to the front-line health workers for their action and follow-up, in accordance with HHAP operational plans;</li>
       <li>The guidance can include specific actions to be performed by the health care workers to reduce potential negative impacts for the health system clients and/or advice on how to avoid exposure to occupational heat stress.</li>
     </ul>
   </li>
-
   <li>Act on targeted message(s)
     <ul>
       <li>The health care workers who receive the targeted message(s) perform suggested actions to prepare for and respond to the heat event alert;</li>
       <li>In clinical settings, health care workers should apply clinical judgment to respond appropriately to each patient’s or client’s individual needs. They should understand the health risks associated with extreme heat and know how to take protective measures. If a patient or client appears to be at risk of overheating—such as living in an excessively hot room or home—health care workers should know what actions need to be performed to ensure their immediate safety.</li>
     </ul>
-    <ol>
+    <ul>
       <li>4.1 Perform actions that reduce occupational heat stress
         <ul>
           <li>The health workers are one of the risk groups exposed to occupational heat stress. The health worker should perform the necessary actions to mitigate the negative impact the heat event can have on their mental and physical health.</li>
@@ -274,15 +253,13 @@ Notes:
           </li>
         </ul>
       </li>
-    </ol>
+    </ul>
   </li>
-
   <li>Threshold for heat-related cases breached?
     <ul>
       <li>The impact-based thresholds for heat-related cases are established based on health data reported by healthcare workers. Reaching a pre-determined threshold can be an important criterion when deciding if a heat event investigation needs to be performed. The threshold values should be defined according to country specific guidelines and guidance documents.</li>
     </ul>
   </li>
-
   <li>Conduct heat event investigation
     <ul>
       <li>The surveillance officer performs a heat event investigation, focusing on assessing the impact of the heat event on health and on the effectiveness of the HHAP implementation. The investigation may require the involvement and expertise of an epidemiologist specialised in heat-related cases;</li>
@@ -300,7 +277,6 @@ Notes:
       </li>
     </ul>
   </li>
-
   <li>Compile and submit heat event report
     <ul>
       <li>The Surveillance Officer compiles and submits the heat event report based on the data reported by the healthcare workers and the heat event investigation conducted, if any. The reports inform further adjustments to the HHAP by providing relevant information for stakeholders, such as data that better explain the temperature-mortality relationships or the cost-effectiveness of interventions. The development of the HHAP is an iterative process that should include conclusions made based on surveillance and reporting data generated for past heat events;</li>
@@ -313,13 +289,11 @@ Notes:
       </li>
     </ul>
   </li>
-
   <li>Receives targeted message(s) for healthcare workers
     <ul>
       <li>A trigger event for the implementation of the HHAP operational plan is the reception of targeted message(s) directly by the health care workers. This step implies that the message(s) is(are) directly disseminated to health care workers, without waiting for the information to be sent by the health service managers. This represents a streamlined workflow, based on strong DPI components and reliable distribution mechanisms.</li>
     </ul>
   </li>
-
   <li>Acknowledgment sent for reception of targeted message(s) for staff
     <ul>
       <li>The health care worker acknowledges the message reception. The acknowledgement can be done:
@@ -330,7 +304,6 @@ Notes:
       </li>
     </ul>
   </li>
-
   <li>Experiences heat-related illness (2d-2w after alert is sent)
     <ul>
       <li>The heat event alert is sent in advance of the onset date of the heat wave. Therefore, there is usually a delay between the date when a heat event alert is received by the health workers and the first impact on the health system is perceived, for example when the clients start experiencing heat-related illnesses and present to healthcare facilities. This delay might represent a couple of days or weeks, depending on how much time in advance the heat event is forecasted and the alert is sent.</li>
