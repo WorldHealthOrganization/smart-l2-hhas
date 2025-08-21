@@ -19,6 +19,15 @@ The targeted personas for a HHAS solution as identified in these specifications 
 
 The specific roles and demographic profiles of the personas will vary depending on the setting. Generic personas "Health Service Manager" and "Healthcare worker" are based on WHO core competencies and credentials[^2].
 
+### Related personas
+
+In addition to the targeted personas detailed above, there are secondary personas within the context of a Heat-Health Alert System, such as _Surveillance Officer_ and _Client_. However, these were not identified as the central personas for the workflows and data content detailed in this L2 specifications. The related personas are listed in the table below.
+
+| Name | Description | Different names | International Standard for Classification of Occupations code[^1]|
+|-------|-----|-----|-----|
+| Client  | In the context of this document, a client is a person who experiences heat-related illness(es) and is given medical care. The client might present with mild, moderate or severe symptoms. | Patient, health service user, individual seeking care.| N/A|
+| Surveillance officer  | Surveillance officers coordinate collection and verification of data sent by healthcare workers and healthcare facilities. They analyze syndromic surveillance data to monitor trends, to identify response actions, to evaluate the impact of heat events and the effectiveness of HHAP implementation. They also communicate findings to higher level health authorities and guide response measures. Different geographic or administrative regions such as national or sub-national levels could have dedicated epidemiologists. | District surveillance officer, regional surveillance officer, national surveillance officer, public health officer.| 3259 - Health Associate Professionals Not Elsewhere Classified |
+
 **References**
 
 [^1]: [Classifying health workers: Mapping occupations to the international standard classification. Geneva: World Health Organization; 2019](https://cdn.who.int/media/docs/default-source/health-workforce/dek/classifying-health-workers.pdf).

@@ -12,7 +12,7 @@ Alert messages work best when tailored and targeted to their intended audiences,
 To augment existing "last mile" channels of communication to healthcare workers, digital technology can be leveraged to ensure more efficient, effectively and targeted messaging. In particular, existing standards such as the Common Alerting Protocol (CAP) from the World Metrological Organization (WMO) - which is designed to provide a consistent format for emergency alerting across various technologies - can be harnessed in conjunction with a wide range of internet, short message systems (SMS), or application-based solutions, to optimize the healthcare response to heat events.  
 
 #### Purpose of this IG
-This IG lays out an approach for a Heat-Health Alert System for Targeted Health System Response (HHAS). Where one or several CAP-formatted alerts can be sent to a number of targeted healthcare worker recipients, and can record the outcomes of any human interactions upon receipt of the alert. The approach is based on the required data to identify and target specific healthcare workers, leveraging facility location and/or healthcare worker registries. The document leverages existing free and open standards and is driven by use cases and requirements for effectively alerting the healthcare workers that will be impacted by a heat event.
+This IG lays out an approach for a Heat-Health Alert System (HHAS) for Targeted Health System Response. Where one or several CAP-formatted alerts can be sent to a number of targeted healthcare worker recipients, and can record the outcomes of any human interactions upon receipt of the alert. The approach is based on the required data to identify and target specific healthcare workers, leveraging facility location and/or healthcare worker registries. The document leverages existing free and open standards and is driven by use cases and requirements for effectively alerting the healthcare workers that will be impacted by a heat event.
 As Member States are increasingly looking to adopt digital solutions as part of the implementation or iteration of a HHAP, this document provides a baseline set of requirements for a HHAS solution that is interoperable with other standards-based health solutions. With the baseline requirements met, it is also anticipated that Member States will further adapt and extend these specifications to suit their needs, most likely working with a local technology partner of their choice to implement a digital solution.
 This document is therefore software-agnostic and provides a starting point for Member States to design, develop and deploy a HHAS digital and data information systems solution for national use in whichever format best suits their needs.
 
@@ -63,15 +63,20 @@ The following assumptions are made about Member States' responsibilities as foun
 ### L1 Narrative guidelines
 References used in this implementation guide are listed below:
 
-- https://iris.who.int/handle/10665/339462
-- https://iris.who.int/handle/10665/346259
-- https://iris.who.int/handle/10665/107935
-- https://iris.who.int/handle/10665/378102
-- https://iris.who.int/handle/10665/341580
-- https://iris.who.int/handle/10665/107934
-- https://iris.who.int/handle/10665/107888
-- https://iris.who.int/handle/10665/107552
-- Upcoming guidance for "Heatwaves and health: guidance on warning-system development"
+- [Heat and health in the WHO European Region: updated evidence for effective prevention. World Health Organization. Regional Office for Europe. 2021](https://iris.who.int/handle/10665/339462);
+- [Updating the evidence related to heat–health action planning: 21–22 November 2018, Bonn, Germany: meeting report. World Health Organization. Regional Office for Europe. 2019](https://iris.who.int/handle/10665/346259);
+- [Improving public health responses to extreme weather/heat-waves: EuroHEAT: technical summary. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107935);
+- [Report of a scoping meeting for the selection of indicators to monitor the impact of extreme heat on maternal, newborn and child health: Geneva, Switzerland, 24-25 April 2023. World Health Organization. 2024](https://iris.who.int/handle/10665/378102);
+- [Public health advice on preventing health effects of heat: new and updated information for different audiences. World Health Organization. Regional Office for Europe. 2011](https://iris.who.int/handle/10665/341580);
+- [EuroHEAT: improving public health responses to extreme weather/heat-waves: summary for policy-makers. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107934);
+- [Heat–health action plans: guidance. World Health Organization. Regional Office for Europe. 2009](https://iris.who.int/handle/10665/107888);
+- [Heat-waves: risks and responses. World Health Organization. Regional Office for Europe. 2004](https://iris.who.int/handle/10665/107552).
+
+Other, non-WHO, references used in this implementation guide are listed below:
+- [User guide Weather-health alerting system. UK Health Security Agency. Met Office. 2025](https://assets.publishing.service.gov.uk/media/67f3aeaed3f1efd2ce2ab897/WHA_User_Guide.pdf);
+- [Treatment and Prevention of Heat-Related Illness. New England Journal of Medicine. Sorensen Cecilia, Hess Jeremy. 2022. doi: 10.1056/NEJMcp2210623](https://doi.org/10.1056/NEJMcp2210623);
+- [Heat Alert and Response Systems to Protect Health: Best Practices Guidebook. Health Canada, Water, Air and Climate Change Bureau Healthy Environments and Consumer Safety Branch. 2012](https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/ewh-semt/alt_formats/pdf/pubs/climat/response-intervention/response-intervention-eng.pdf);
+- [Common Alerting Protocol Message Broker for Last-Mile Hazard Warning System in Sri Lanka: An Essential Component. SSRN Electronic Journal. 10.2139/ssrn.1568001. 2007](https://www.researchgate.net/publication/228242993_Common_Alerting_Protocol_Message_Broker_for_Last-Mile_Hazard_Warning_System_in_Sri_Lanka_An_Essential_Component).
 
 ### L2 Operational guidelines
 
@@ -87,7 +92,7 @@ References used in this implementation guide are listed below:
 
    - Indicators are not available at the moment.
  
-   - Functional and non functional requirements are not available at the moment.
+   - [Link to functional and non functional requirements](https://worldhealthorganization.github.io/smart-l2-hhas/system-requirements.html).
 
 ### L3 Machine readable guidelines
 The L3 FHIR Implementation Guide for the HHAS L2 SMART Guidelines is yet to be published. Links will be published here as soon as they're available.
