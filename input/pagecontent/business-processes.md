@@ -76,21 +76,23 @@ The following table describes the workflows of the included processes.
   </tbody>
 </table>
 
-The picture below presents the expanded view of the business processes included in this guide.
+The picture below presents the overview of the business processes included in this guide.
 
 
-<img src="./All_processes_expanded_v4.svg" style="width:60%; align:center"/>
+<img src="./Overview_HHAS.svg" style="width:60%; align:center"/>
 <br clear="all"/>
 
-Notes: 
-- "Issue HEAT-HEALTH action plan" and "Registration" sub-processes are linked to the overall HHAS process but are out of scope in this iteration (colored in purple in the diagram);
-- The source file of the business processes designed for this guide can be downloaded [here](HHAS L2_BPMN files.zip).
+Note: 
+- The source files of the business processes designed for this guide can be downloaded [here](HHAS L2_BPMN files.zip).
 
 #### A. Business process for issuing and disseminating a heat event alert
 
 **Objective:** To issue a CAP alert, decide on its dissemination  and send targeted messages to health care facilities/health care workers.
 
-**Notes and annotations:**
+<img src="./HHAS_A.svg" style="width:60%; align:center"/>
+<br clear="all"/>
+
+**Business process "HHAS.A Issue and disseminate a heat event alert" notes and annotations:**
 
 <ol>
   <li>Forecast an upcoming heat event
@@ -102,8 +104,8 @@ Notes:
     <ul>
       <li>The Alert originator issues a heat event alert in the form of a Common Alerting Protocol (CAP) alert;</li>
       <li>The Alert should follow a CAP format, which is an open, non-proprietary digital message format (RSS , ATOM , or MQTT ) for all types of alerts and notifications (Ref ITU CAP). CAP assists with clear quick action-oriented messaging through machine-to-machine dissemination and to a variety of partners and the public, through a generic XML format;</li>
-      <li>One of the most used methods for disseminating CAP alerts is via the publish/subscribe mechanism, also known as CAP alert feeds. The subscribed actors, including the National Alert Authorizing Agency, can fetch the alert, usually via an alert aggregator service integrated into the HHAS solution;</li>
-      <li>Beside the commonly used publish/subscribe mechanism for disseminating CAP alerts, other solutions can be implemented for delivering the CAP alerts (e.g. Mobile Alert Communication Management (mACM) IHE profile). The dissemination method and technology remain a decision to be made during implementation;</li>
+      <li>One of the most used methods for disseminating CAP alerts is via the publish/subscribe mechanism, also known as CAP alert feeds, compliant with one of the three Internet standards for news feeds: Really Simple Syndication (RSS), Atom Syndication Format (ATOM), or message queue telemetry transport (MQTT) protocol. The subscribed actors, including the National Alert Authorizing Agency, can fetch the alert, usually via an alert aggregator service integrated into the HHAS solution;</li>
+      <li>•	Beside the commonly used publish/subscribe mechanism for disseminating CAP alerts, other solutions can be implemented for delivering the CAP alerts (e.g. Mobile Alert Communication Management (mACM) Integrating the Healthcare Enterprise (IHE) profile). The dissemination method and technology remain a decision to be made during implementation;</li>
       <li>Guidelines:
         <ul>
           <li>Common alerting protocol (CAP 1.2), ITU-T X.1303 bis<sup id="ref1"><a href="#fn1">1</a></sup>;</li>
@@ -155,13 +157,11 @@ Notes:
       <li>The Alert, containing targeted information, is sent to the health care facilities and/or health care workers via appropriate distribution mechanisms.</li>
     </ul>
   </li>
-  <li>Targeted message(s) for health service managers sent</li>
   <li>Acknowledgment received for message(s) delivered to health service managers
     <ul>
       <li>The acknowledgement messages, sent via explicit acknowledgment actions or implicitly via system mechanisms, are received. This event closes the alert dissemination to health service managers workflow.</li>
     </ul>
   </li>
-  <li>Targeted message(s) for health care workers sent</li>
   <li>Acknowledgment received for message(s) delivered to health care workers
     <ul>
       <li>The acknowledgement messages, sent via explicit acknowledgment actions or implicitly via system mechanisms, are received. This event closes the alert dissemination to health care workers workflow.</li>
@@ -181,7 +181,10 @@ Notes:
 
 **Objective:** To acknowledge the reception and understanding of the information provided within a CAP alert and act on targeted message(s).
 
-**Notes and annotations:**
+<img src="./HHAS_B.svg" style="width:60%; align:center"/>
+<br clear="all"/>
+
+**Business process "HHAS.B Implement HHAP operational plan" notes and annotations:**
 
 <ol>
   <li>Receives targeted message(s) for healthcare facility mangers

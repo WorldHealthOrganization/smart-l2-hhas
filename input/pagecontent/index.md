@@ -12,7 +12,7 @@ Alert messages work best when tailored and targeted to their intended audiences,
 To augment existing "last mile" channels of communication to healthcare workers, digital technology can be leveraged to ensure more efficient, effectively and targeted messaging. In particular, existing standards such as the Common Alerting Protocol (CAP) from the World Metrological Organization (WMO) - which is designed to provide a consistent format for emergency alerting across various technologies - can be harnessed in conjunction with a wide range of internet, short message systems (SMS), or application-based solutions, to optimize the healthcare response to heat events.  
 
 #### Purpose of this IG
-This IG lays out an approach for a Heat-Health Alert System (HHAS) for Targeted Health System Response. Where one or several CAP-formatted alerts can be sent to a number of targeted healthcare worker recipients, and can record the outcomes of any human interactions upon receipt of the alert. The approach is based on the required data to identify and target specific healthcare workers, leveraging facility location and/or healthcare worker registries. The document leverages existing free and open standards and is driven by use cases and requirements for effectively alerting the healthcare workers that will be impacted by a heat event.
+This IG lays out business specifications for a Heat-Health Alert System (HHAS), where one or several CAP-formatted alerts can be sent to targeted healthcare worker recipients, and can record the outcomes of any human interactions upon receipt of the alert. The IG leverages existing free and open standards and is driven by use cases and requirements for effectively alerting the healthcare workers that will be impacted by a heat event.
 As Member States are increasingly looking to adopt digital solutions as part of the implementation or iteration of a HHAP, this document provides a baseline set of requirements for a HHAS solution that is interoperable with other standards-based health solutions. With the baseline requirements met, it is also anticipated that Member States will further adapt and extend these specifications to suit their needs, most likely working with a local technology partner of their choice to implement a digital solution.
 This document is therefore software-agnostic and provides a starting point for Member States to design, develop and deploy a HHAS digital and data information systems solution for national use in whichever format best suits their needs.
 
@@ -33,7 +33,7 @@ Aspects that are considered out of the scope of this work are:
 - Detailed protocols for emergency medical response or hospital surge capacity management. These are addressed in existing healthcare emergency preparedness plans;
 - The specific content of the heat-health guidance to healthcare workers and healthcare facilities. This will vary by region and national context and should be developed by relevant public health authorities;
 - The process of training healthcare workers to use the HHAS;
-- Delivering alert messages to general public is out of scope;
+- Delivering alert messages to general public;
 - Considerations for monitoring and evaluation of HHAS roll-out and use.
 
 #### Assumptions
@@ -41,7 +41,7 @@ This document operates under the assumption that Member States can utilize Hazar
 - CAP is a standardized data interchange that is open-source and XML-based, with clearly defined elements, and the ability to support data exchange across multiple dissemination channels, allowing a single input to generate multiple outputs for downstream dissemination. CAP-enabled systems can therefore facilitate easier integration with other national and international information systems; 
 - HHAPs Guidelines include the inclusion of early warning systems as crucial components in protecting public health during extreme heat events. These systems, encompassing both hazard-based (HEWS) and impact-based (Heat Health Warning Systems - HHWS) approaches, aim to provide timely alerts to mitigate heat-related risks. Hazard warnings focus on the intrinsic characteristics of the impending event, such as heatwave intensity (temperature, humidity). Impact warnings, conversely, translate these characteristics into potential consequences for people, infrastructure, and livelihoods (i.e. a 'thermal temperature' calculation which measures the health risks of how heat directly affects people). While impact warnings offer more actionable information, hazard warnings remain more accessible, particularly for resource-constrained countries, which requires additional coordination and data;
 - CAP accommodates hazard-based heat alerts, recognizing 'heat wave' as a Tier II event within the broader Tier I category of 'temperature'. However, CAP currently lacks the ability to effectively integrate impact-based information (i.e. extreme thermal temperature), and the absence of standardized hazard definitions necessitates further development of the protocol;
-- Given the practical constraints and the widespread availability of hazard-based data, this document will proceed under the assumption that Member States can, at a minimum, leverage HEWS to generate CAP-compliant heatwave alerts, ensuring a baseline level of standardized communication that can then be transmitted via a HHAS solution. This approach acknowledges the immediate need for scalable approaches to extreme heat warning dissemination while recognizing that the evolution towards impact-based CAP integration remains a longer-term goal for enhanced public health protection.
+- Given the practical constraints and the widespread availability of hazard-based data, this document will proceed under the assumption that Member States can, at a minimum, leverage HEWS to generate CAP-compliant heatwave alerts, ensuring a baseline level of standardized communication that can then be transmitted via a HHAS solution. **This approach acknowledges the immediate need for scalable approaches to extreme heat warning dissemination while recognizing that the evolution towards impact-based CAP integration remains a longer-term goal for enhanced public health protection.**
 
 The requirements outlined are intended to allow for HHAS solutions to meet the needs of a country's HHAP, while still being usable in other national and local contexts.<br>
 
@@ -50,14 +50,14 @@ The technological specification for a HHAS solution is intended to be flexible a
 An overarching assumption is that multiple digital products will be implemented to operationalize the requirements described in this document. This allows for support of local and sustainable development so that Member States have a broad choice of appropriate solutions without excluding compliant products from any source.<br>
 
 The following assumptions are made about Member States' responsibilities as foundational aspects of setting up and running a HHAS solution:
-- Member States have access to reliable and accurate meteorological and/or emergency services capable of generating and disseminating timely heat-wave forecasts and warnings; 
-- Member States possess or are in the process of developing functional health information systems that can store and manage relevant data, including healthcare worker registries, health facility databases, and patient records.
-- Member States maintain up-to-date registries of healthcare workers, including their contact information, specializations, and locations, as well as comprehensive databases of healthcare facilities with their capacities and services;
-- Member States have access to reliable and accessible communication infrastructure, including internet connectivity, mobile networks, and other communication channels, to enable the dissemination of alerts and information;
-- Member States have established or are developing comprehensive HHAPs that outline clear roles, responsibilities, and procedures for responding to heat events;
-- Member States have established mechanisms for coordination between meteorological services, public health authorities, and healthcare providers;
-- Member States have the capacity to maintain, update, and support the HHASs, including technical expertise and resources;
-- Member states will provide adequate training to relevant personnel including healthcare workers on the use of the HHAS system and heat-related health protocols.
+- Member States have access to reliable and accurate **meteorological and/or emergency services** capable of generating and disseminating timely heat-wave forecasts and warnings; 
+- Member States possess or are in the process of developing **functional health information systems** that can store and manage relevant data, including healthcare worker registries, health facility databases, and patient records.
+- Member States **maintain up-to-date registries** of healthcare workers, including their contact information, specializations, and locations, as well as comprehensive databases of healthcare facilities with their capacities and services;
+- Member States have access to **reliable and accessible communication infrastructure**, including internet connectivity, mobile networks, and other communication channels, to enable the dissemination of alerts and information;
+- Member States have established or are developing **comprehensive HHAPs** that outline clear roles, responsibilities, and procedures for responding to heat events;
+- Member States have established **mechanisms for coordination** between meteorological services, public health authorities, and healthcare providers;
+- Member States have the **capacity to maintain, update, and support** the HHASs, including technical expertise and resources;
+- Member states will provide **adequate training** to relevant personnel including healthcare workers on the use of the HHAS system and heat-related health protocols.
 
 
 ### L1 Narrative guidelines
