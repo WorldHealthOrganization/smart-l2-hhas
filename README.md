@@ -15,3 +15,4 @@ An empty Digital Adaptation Kit (DAK) Implementation Guide to be used as a start
 
 Feedback and issues about this empty DAK can be submitted via the [issues](issues) page, and will be incorporated into subsequent releases.
 
+ 
