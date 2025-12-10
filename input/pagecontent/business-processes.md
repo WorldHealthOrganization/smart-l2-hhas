@@ -131,7 +131,7 @@ Note:
   </li>
   <li>Review the system generated message(s)
     <ul>
-      <li>Once approved, the HHAS enhances automatically the Alert content with guidance from the HHAP, based on pre-defined logic;</li>
+      <li>Once approved, the HHAS enhances automatically the Alert content with guidance from the pre-developed HHAP, based on pre-defined logic;</li>
       <li>The Alerting Officer receives a notification via the HHAS of a new Alert on subscribed CAP Feed and reviews the Alert, including the enhancements proposed by the HHAS.</li>
     </ul>
   </li>
@@ -215,9 +215,10 @@ Note:
       <li>The health workers are one of the risk groups exposed to occupational heat stress, therefore they should perform the necessary actions to mitigate the negative impact the heat event can have on their mental and physical health.</li>
     </ul>
   </li>
-  <li>Experiences heat-related illness (2d-2w after alert is sent)
+  <li>Experiences heat-related illness
     <ul>
-      <li>The heat event alert is sent in advance of the onset date of the heat wave. Therefore, there is usually a delay between the date when a heat event alert is received by the health workers and the first impact on the health system is perceived, for example when the clients start experiencing heat-related illnesses and present to healthcare facilities. This delay might represent a couple of days or weeks, depending on how much time in advance the heat event is forecasted and the alert is sent.</li>
+      <li>The heat event alert is sent in advance of the onset date of the heat wave. Therefore, there is usually a delay between the date when a heat event alert is received by the health workers and the first impact on the health system is perceived, for example when the clients start experiencing heat-related illnesses and present to healthcare facilities. This delay might represent a couple of days or weeks, depending on how much time in advance the heat event is forecasted and the alert is sent;</li>
+       <li>Prior to starting the clinical investigation, the client is identified and registered in the system. These activities are usually performed using paper registers or existing PCPOSS and are reflected in a DAK as a standalone "Registration" workflow. The "Registration" business process is not detailed in this DAK due to its generic nature.</li>
     </ul>
   </li>
   <li>Evaluate client symptoms against case definition

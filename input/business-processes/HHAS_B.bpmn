@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="453d943" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="f46e235" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
   <bpmn:collaboration id="Collaboration_17e7tza" name="All processes expanded">
     <bpmn:participant id="Participant_10vd2b8" name="HHAS.B Implement HHAP operational plan" processRef="Process_zafy3hs" />
-    <bpmn:textAnnotation id="TextAnnotation_0s4fmsx">
-      <bpmn:text>Client's arrival at facility or healthcare worker's arrival at client location and initial screening are included here</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0mi3i8h" associationDirection="None" sourceRef="Activity_177dfux" targetRef="TextAnnotation_0s4fmsx" />
   </bpmn:collaboration>
   <bpmn:message id="Message_2277kr9" name="Ack received">
     <bpmn:extensionElements>
@@ -23,21 +19,21 @@
       </bpmn:lane>
       <bpmn:lane id="Lane_03diic5" name="Healthcare worker">
         <bpmn:flowNodeRef>Activity_1gm4257</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Event_1t9jr09</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1sd7b57</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_0840tvh</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1rbpm0h</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0afwelf</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_07mbkj0</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_016vzit</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1t9jr09</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_08wwwp3" name="Health Service Manager">
         <bpmn:flowNodeRef>Activity_0zzq3r5</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_026olhy</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1q2tsev" name="Client">
-        <bpmn:flowNodeRef>Event_1bq6pi2</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_177dfux</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1bq6pi2</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
     <bpmn:task id="Activity_0zzq3r5" name="2. Send message(s) to healthcare workers">
@@ -49,14 +45,6 @@
       <bpmn:incoming>Flow_1c9u2or</bpmn:incoming>
       <bpmn:outgoing>Flow_0p8gf90</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:startEvent id="Event_1t9jr09" name="14. Receives targeted message(s) for healthcare workers&#10; (HHAS.A Issue and disseminate a heat event alert)">
-      <bpmn:outgoing>Flow_1iefp3u</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_0j5ad4d" />
-    </bpmn:startEvent>
-    <bpmn:startEvent id="Event_026olhy" name="1. Receives targeted message(s) for healthcare facility mangers (HHAS.A Issue and disseminate a heat event alert)">
-      <bpmn:outgoing>Flow_0qzace4</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_079ebur" />
-    </bpmn:startEvent>
     <bpmn:task id="Activity_1sd7b57" name="5. Evaluate client symptoms against case definition">
       <bpmn:incoming>Flow_0l1q8u6</bpmn:incoming>
       <bpmn:outgoing>Flow_0kqcyu5</bpmn:outgoing>
@@ -106,10 +94,6 @@
       <bpmn:incoming>Flow_0p8gf90</bpmn:incoming>
       <bpmn:outgoing>Flow_0l1q8u6</bpmn:outgoing>
     </bpmn:parallelGateway>
-    <bpmn:startEvent id="Event_1bq6pi2" name="4. Experiences heat-related illness (2d-2w after alert is sent)">
-      <bpmn:outgoing>Flow_1dnq5jj</bpmn:outgoing>
-      <bpmn:timerEventDefinition id="TimerEventDefinition_1idssz0" />
-    </bpmn:startEvent>
     <bpmn:subProcess id="Activity_177dfux" name="Registration">
       <bpmn:incoming>Flow_1dnq5jj</bpmn:incoming>
       <bpmn:outgoing>Flow_0qhybc9</bpmn:outgoing>
@@ -132,6 +116,17 @@
     <bpmn:sequenceFlow id="Flow_0a7kdmm" sourceRef="Activity_1cgw0g0" targetRef="Gateway_12d4e00" />
     <bpmn:sequenceFlow id="Flow_0qhybc9" sourceRef="Activity_177dfux" targetRef="Gateway_016vzit" />
     <bpmn:sequenceFlow id="Flow_1dnq5jj" sourceRef="Event_1bq6pi2" targetRef="Activity_177dfux" />
+    <bpmn:intermediateCatchEvent id="Event_026olhy" name="1. Receives targeted message(s) for healthcare facility mangers (HHAS.A Issue and disseminate a heat event alert)">
+      <bpmn:outgoing>Flow_0qzace4</bpmn:outgoing>
+      <bpmn:linkEventDefinition id="LinkEventDefinition_0l1zexp" name="" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:startEvent id="Event_1bq6pi2" name="4. Experiences heat-related illness">
+      <bpmn:outgoing>Flow_1dnq5jj</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:intermediateCatchEvent id="Event_1t9jr09" name="14. Receives targeted message(s) for healthcare workers&#10; (HHAS.A Issue and disseminate a heat event alert)">
+      <bpmn:outgoing>Flow_1iefp3u</bpmn:outgoing>
+      <bpmn:linkEventDefinition id="LinkEventDefinition_1yrw9d5" name="" />
+    </bpmn:intermediateCatchEvent>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_17e7tza">
@@ -139,20 +134,20 @@
         <dc:Bounds x="160" y="80" width="1173" height="1230" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1n7ny74_di" bpmnElement="Lane_1n7ny74" isHorizontal="true">
-        <dc:Bounds x="190" y="780" width="1143" height="350" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_03diic5_di" bpmnElement="Lane_03diic5" isHorizontal="true">
-        <dc:Bounds x="190" y="290" width="1143" height="490" />
+      <bpmndi:BPMNShape id="Lane_1q2tsev_di" bpmnElement="Lane_1q2tsev" isHorizontal="true">
+        <dc:Bounds x="190" y="1130" width="1143" height="180" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_08wwwp3_di" bpmnElement="Lane_08wwwp3" isHorizontal="true">
         <dc:Bounds x="190" y="80" width="1143" height="210" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1q2tsev_di" bpmnElement="Lane_1q2tsev" isHorizontal="true">
-        <dc:Bounds x="190" y="1130" width="1143" height="180" />
+      <bpmndi:BPMNShape id="Lane_03diic5_di" bpmnElement="Lane_03diic5" isHorizontal="true">
+        <dc:Bounds x="190" y="290" width="1143" height="490" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1n7ny74_di" bpmnElement="Lane_1n7ny74" isHorizontal="true">
+        <dc:Bounds x="190" y="780" width="1143" height="350" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0zzq3r5_di" bpmnElement="Activity_0zzq3r5">
@@ -162,18 +157,6 @@
       <bpmndi:BPMNShape id="Activity_1gm4257_di" bpmnElement="Activity_1gm4257">
         <dc:Bounds x="425" y="350" width="100" height="80" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0v4dh10_di" bpmnElement="Event_1t9jr09">
-        <dc:Bounds x="617" y="362" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="662" y="327" width="86" height="106" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_049adxy_di" bpmnElement="Event_026olhy">
-        <dc:Bounds x="337" y="152" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="251" y="137" width="90" height="106" />
-        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1sd7b57_di" bpmnElement="Activity_1sd7b57">
         <dc:Bounds x="615" y="515" width="100" height="80" />
@@ -221,10 +204,22 @@
       <bpmndi:BPMNShape id="Gateway_1helg9p_di" bpmnElement="Gateway_016vzit">
         <dc:Bounds x="450" y="530" width="50" height="50" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1lxk4ys_di" bpmnElement="Event_1bq6pi2">
+      <bpmndi:BPMNShape id="Event_1fahnz4_di" bpmnElement="Event_026olhy">
+        <dc:Bounds x="337" y="152" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="251" y="137" width="90" height="106" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0eixsjy_di" bpmnElement="Event_1bq6pi2">
         <dc:Bounds x="297" y="1182" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="275" y="1225" width="86" height="53" />
+          <dc:Bounds x="281" y="1225" width="74" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0lrorhx_di" bpmnElement="Event_1t9jr09">
+        <dc:Bounds x="337" y="362" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="257" y="327" width="86" height="106" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1972k13_di" bpmnElement="Activity_177dfux" bioc:stroke="#5b176d" bioc:fill="#e1bee7" color:background-color="#e1bee7" color:border-color="#5b176d">
@@ -239,8 +234,8 @@
         <di:waypoint x="475" y="350" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1iefp3u_di" bpmnElement="Flow_1iefp3u">
-        <di:waypoint x="617" y="380" />
-        <di:waypoint x="525" y="380" />
+        <di:waypoint x="373" y="380" />
+        <di:waypoint x="425" y="380" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0p8gf90_di" bpmnElement="Flow_0p8gf90">
         <di:waypoint x="475" y="430" />
@@ -315,14 +310,6 @@
         <di:waypoint x="333" y="1200" />
         <di:waypoint x="425" y="1200" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0mi3i8h_di" bpmnElement="Association_0mi3i8h">
-        <di:waypoint x="525" y="1193" />
-        <di:waypoint x="580" y="1183" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_0s4fmsx_di" bpmnElement="TextAnnotation_0s4fmsx">
-        <dc:Bounds x="580" y="1160" width="220" height="55" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
   <bpmndi:BPMNDiagram id="BPMNDiagram_0o3zaue">
