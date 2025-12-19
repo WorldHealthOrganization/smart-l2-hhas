@@ -149,7 +149,7 @@ Note:
     <ul>
       <li>The affected area indicated in the Alert is the main criterion used to determine who should be the recipients of the message(s);</li>
       <li>The Alerting Officer identifies the impacted healthcare facility/healthcare workers through local mapping and healthcare registries;</li>
-      <li>The HHAS can automatically retrieve the list of recipients from the health facility registry and/or health worker registry if those are available and interoperable with the HHAS. The Alerting Officer can review and update the list, for example add or remove recipients, as necessary.</li>
+      <li>The HHAS can automatically retrieve the list of recipients from the health facility registry and/or health worker registry if those are available and interoperable with the HHAS. The Alerting Officer can review and update the list, for example add or remove recipients, as necessary<sup id="ref5"><a href="#fn5">5</a></sup>.</li>
     </ul>
   </li>
   <li>Send targeted message(s)
@@ -168,16 +168,6 @@ Note:
       <li>The CAP message should be adapted based on the contextual factors of the heat event alert. In addition to the CAP standard elements (urgency, severity, certainty, etc.) included in the CAP alert provided by the Alert Generating Agency, contextualized details should be included, such as the potential impacts, disaggregated by vulnerable groups, and clear actions to reduce risk. Risk messaging can be co-developed in advance of a hazard with affected populations to help increase their preparation, based on the level of severity;</li>
       <li>Other improvements could include language adaptation or communication style of the healthcare facilities/workers, such as preference for adaptation measures;</li>
       <li>The resulting CAP message should be altered directly on the CAP Feed Service and maintain CAP message structure.</li>
-    </ul>
-  </li>
-    <li>Healthcare worker and facility registries
-    <ul>
-      <li>The list of recipients should be composed based on the data retrieved from data repositories that serve as central authorities for uniquely identifying all the healthcare providers and places where health services are administered within a country (health worker registry and facility registry);</li>
-      <li>Guidelines:
-        <ul>
-          <li>Classification of digital interventions, services and applications in health: a shared language to describe the uses of digital technology for health, 2nd ed.<sup id="ref5"><a href="#fn5">5</a></sup>.</li>
-        </ul>
-      </li>
     </ul>
   </li>
 </ol>
