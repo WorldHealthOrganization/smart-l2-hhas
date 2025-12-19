@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Business Processes - SMART L2 HHAS v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.5"}
+    h3,h4,h5,h6{--heading-prefix:"2.5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting and implementing</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="health-interventions.html">Health Interventions</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="scheduling-logic.html">Scheduling Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+      <li>
+        <a href="system-requirements.html">System Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART L2 HHAS</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='business-requirements.html'><b>Business Requirements</b></a></li><li><b>Business Processes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART L2 HHAS, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/WorldHealthOrganization/smart-l2-hhas/tree/main'>https://github.com/WorldHealthOrganization/smart-l2-hhas/tree/main</a> and changes regularly. See the <a href='http://smart.who.int/l2-hhas/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Business Processes</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>A business process, or process, is a set of related activities or tasks 
+performed together to achieve the objectives of the health programme area, 
+such as registration, counselling, referrals. Workflows are a visual 
+representation of the progression of activities (tasks, events, interactions) 
+that are performed within the business process. The workflow provides a “story” 
+for the business process being diagrammed and is used to enhance communication 
+and collaboration among users, stakeholders and engineers. The workflows included in this IG depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur.</p>
+
+<h3 id="overview-of-key-business-processes">Overview of Key Business Processes</h3>
+<p>The following table describes the workflows of the included processes.</p>
+
+<table border="1" class="dataframe table table-striped table-bordered">
+  <thead>
+    <tr class="header">
+      <th><strong>#</strong> </th>
+      <th><strong>Process Name</strong> </th>
+      <th><strong>Process ID</strong> </th>
+      <th><strong>Personas</strong> </th>
+      <th><strong>Objectives</strong> </th>
+      <th><strong>Task set</strong> </th>
+    </tr>
+ </thead>
+ <tbody>
+    <tr class="odd">
+      <td>1</td>
+      <td>Issue and disseminate a heat event alert</td>
+      <td>HHAS.A</td>
+      <td>
+        <ul>
+            <li>National Alert Generating Agency</li>
+            <li>National Alert Authorizing Agency</li>
+            <li>Alerting Officer</li>
+        </ul>
+    </td>
+      <td>To issue a CAP alert, decide on its dissemination  and send targeted messages to health care facilities/health care workers.</td>
+      <td><i>Starting point: The National Alert Generating Agency issues and sends/publishes a CAP alert for a heat event.</i> <br />
+    <ul>
+        <li>Issue a heat event CAP alert</li>
+        <li>Decide on alert dissemination authorization</li>
+        <li>Review the system generated message(s)</li>
+        <li>Review and validate the list of recipients</li>
+        <li>Send targeted message(s)</li>
+    </ul>
+ </td>
+    </tr>
+     <tr class="even">
+      <td>2</td>
+      <td>Implement HHAP operational plan</td>
+      <td>HHAS.B</td>
+      <td>
+        <ul>
+            <li>Healthcare facility manager</li>
+            <li>Healthcare worker</li>
+            <li>Surveillance Officer</li>
+            <li>Client</li>
+        </ul>
+    </td>
+    <td>To acknowledge the reception and understanding of the information provided within a CAP alert, act on targeted message(s) and submit heat event report(s).</td>
+    <td><i>Starting point: The health facility manager/health care worker receives the targeted message(s).</i> <br />
+        <ul>
+            <li>Acknowledge the message(s) reception</li>
+            <li><i>(Health facility manager)</i> Send message(s) to health-care workers</li>
+            <li><i>(Health care worker)</i> Act on targeted message(s):
+                <ul>
+                    <li>Perform actions that reduce occupational heat stress;</li>
+                    <li>Evaluate client symptoms against case definition;</li>
+                    <li>Report cases that meet the heat-related case definition.</li>
+                </ul>
+            </li>
+            <li><i>(Surveillance officer)</i> Conduct heat event investigation </li>
+            <li><i>(Surveillance officer)</i> Compile and submit heat event report </li>
+        </ul>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The picture below presents the overview of the business processes included in this guide.</p>
+
+<p><img src="./Overview_HHAS.svg" style="width:40%; align:center" />
+<br clear="all" /></p>
+
+<p>Note:</p>
+<ul>
+  <li>The source files of the business processes designed for this guide can be downloaded <a href="HHAS L2_BPMN files.zip">here</a>.</li>
+</ul>
+
+<h4 id="a-business-process-for-issuing-and-disseminating-a-heat-event-alert">A. Business process for issuing and disseminating a heat event alert</h4>
+
+<p><strong>Objective:</strong> To issue a CAP alert, decide on its dissemination  and send targeted messages to health care facilities/health care workers.</p>
+
+<p><img src="./HHAS_A.svg" style="width:60%; align:center" />
+<br clear="all" /></p>
+
+<p><strong>Business process "HHAS.A Issue and disseminate a heat event alert" notes and annotations:</strong></p>
+
+<ol>
+  <li>Forecast an upcoming heat event
+    <ul>
+      <li>The National Alert Generating Agency uses climatological information and weather forecasts to identify upcoming heat events. Estimations concluding that predefined thresholds will be breached represent the trigger point for a HHAS workflow. The decision to issue or not a heat event alert should be determined from close collaboration of climate, weather, and health communities and policy developers and represents a judgment call of the group of people involved in the decision-making process.</li>
+    </ul>
+  </li>
+  <li>Issue a heat event CAP alert (“Alert”)
+    <ul>
+      <li>The Alert originator issues a heat event alert in the form of a Common Alerting Protocol (CAP) alert;</li>
+      <li>The Alert should follow a CAP format, which is an open, non-proprietary digital message format for all types of alerts and notifications. CAP assists with clear quick action-oriented messaging through machine-to-machine dissemination and to a variety of partners and the public, through a generic XML format;</li>
+      <li>One of the most used methods for disseminating CAP alerts is via the publish/subscribe mechanism, also known as CAP alert feeds, compliant with one of the three Internet standards for news feeds: Really Simple Syndication (RSS), Atom Syndication Format (ATOM), or message queue telemetry transport (MQTT) protocol. The subscribed actors, including the National Alert Authorizing Agency, can fetch the alert, usually via an alert aggregator service integrated into the HHAS solution;</li>
+      <li>Beside the commonly used publish/subscribe mechanism for disseminating CAP alerts, other solutions can be implemented for delivering the CAP alerts (e.g. Mobile Alert Communication Management (mACM) Integrating the Healthcare Enterprise (IHE) profile). The dissemination method and technology remain a decision to be made during implementation;</li>
+      <li>Guidelines:
+        <ul>
+          <li>Common alerting protocol (CAP 1.2), ITU-T X.1303 bis<sup id="ref1"><a href="#fn1">1</a></sup>;</li>
+          <li>Common Alerting Protocol Version 1.2, OASIS<sup id="ref2"><a href="#fn2">2</a></sup>;</li>
+          <li>Common Policies and Practices (Version 03)<sup id="ref3"><a href="#fn3">3</a></sup>;</li>
+          <li>Mobile Alert Communication Management (mACM) IHE profile<sup id="ref4"><a href="#fn4">4</a></sup>;</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Decide on Alert dissemination authorization
+    <ul>
+      <li>The National Alert Authorizing Agency decides if the alert needs to be disseminated to health care facilities and/or healthcare workers. If available, decision-support logic integrated into the HHAS can help with the decision-making process;</li>
+      <li>The decision process to authorize a heat-event and the group or Agency tasked to abide by that authorization process, should be decided on and developed through a co-design approach. Co-design involves the collaboration and active participation of multiple groups in the collective development to meet the diverse needs of those likely to benefit from heat event and heat-health related warnings. Important groups involved in the co-design process would include, NHMS, health ministries and associated agencies, social services, the emergency services, environmental health policy- and decision-makers, representatives of specific target (heat vulnerable/at risk/indigenous) groups for warnings and the public;</li>
+      <li>Based on the co-design process, the Alert Authorizing Agency should make an interpretation of the hazard forecasts and impact estimates. Contextual factors, such as concurrent hazards which may hamper the population's ability to adapt their behaviours or environments (e.g., wildfires), pressures on the delivery of health and social care services (e.g., COVID-19 pandemic) and other indirect factors that might determine the general level of heat-related vulnerability such as the cost of energy for cooling.</li>
+    </ul>
+  </li>
+  <li>Dissemination to health-care workers authorized?
+    <ul>
+      <li>The Alert dissemination may be approved or disapproved;</li>
+      <li>If approved, the system may include a confirmation of approval before further dissemination.</li>
+    </ul>
+  </li>
+  <li>Review the system generated message(s)
+    <ul>
+      <li>Once approved, the HHAS enhances automatically the Alert content with guidance from the pre-developed HHAP, based on pre-defined logic;</li>
+      <li>The Alerting Officer receives a notification via the HHAS of a new Alert on subscribed CAP Feed and reviews the Alert, including the enhancements proposed by the HHAS.</li>
+    </ul>
+  </li>
+  <li>Adaptation needed?
+    <ul>
+      <li>The Alerting Officer determines if any additional enhancements are required for needs contextualized to the regions of impact.</li>
+    </ul>
+  </li>
+  <li>Determine if direct dissemination to health workers is necessary
+    <ul>
+      <li>The Alerting Officer follows the operational guidance from the local Heat Health Action Plan to determine if the alert must be sent directly to health care workers as well or only to healthcare facilities (health service managers).</li>
+    </ul>
+  </li>
+  <li>Retrieve and review the list of recipients
+    <ul>
+      <li>The affected area indicated in the Alert is the main criterion used to determine who should be the recipients of the message(s);</li>
+      <li>The Alerting Officer identifies the impacted healthcare facility/healthcare workers through local mapping and healthcare registries;</li>
+      <li>The HHAS can automatically retrieve the list of recipients from the health facility registry and/or health worker registry if those are available and interoperable with the HHAS. The Alerting Officer can review and update the list, for example add or remove recipients, as necessary<sup id="ref5"><a href="#fn5">5</a></sup>.</li>
+    </ul>
+  </li>
+  <li>Send targeted message(s)
+    <ul>
+      <li>The Alert, containing targeted information, is sent to the health care facilities and/or health care workers via appropriate distribution mechanisms;</li>
+      <li>Upon receipt of the Alert, recipients are expected to confirm delivery through acknowledgment mechanisms. These may include:
+        <ul>
+          <li>explicit acknowledgments: manual confirmation actions such as clicking a receipt link or replying to the message;</li>
+          <li>o	implicit acknowledgments: automated system-level confirmations, such as read receipts or system logs.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Generate targeted message(s) with extra guidance
+    <ul>
+      <li>The CAP message should be adapted based on the contextual factors of the heat event alert. In addition to the CAP standard elements (urgency, severity, certainty, etc.) included in the CAP alert provided by the Alert Generating Agency, contextualized details should be included, such as the potential impacts, disaggregated by vulnerable groups, and clear actions to reduce risk. Risk messaging can be co-developed in advance of a hazard with affected populations to help increase their preparation, based on the level of severity;</li>
+      <li>Other improvements could include language adaptation or communication style of the healthcare facilities/workers, such as preference for adaptation measures;</li>
+      <li>The resulting CAP message should be altered directly on the CAP Feed Service and maintain CAP message structure.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="b-business-process-for-implementing-hhap-operational-plan">B. Business process for implementing HHAP operational plan</h4>
+
+<p><strong>Objective:</strong> To acknowledge the reception and understanding of the information provided within a CAP alert, act on targeted message(s) and submit heat event report(s).</p>
+
+<p><img src="./HHAS_B.svg" style="width:60%; align:center" />
+<br clear="all" /></p>
+
+<p><strong>Business process "HHAS.B Implement HHAP operational plan" notes and annotations:</strong></p>
+
+<ol>
+  <li>Receives targeted message(s) for healthcare facility managers
+    <ul>
+      <li>The targeted message(s) with guidance based on the HHAP and any extra local specificity is received by the health service managers. The managers should thoughtfully assess whether all the actions suggested in the messages are appropriate for their specific work environments, prioritizing the health and wellbeing of both clients (or patients) and staff;</li>
+      <li>The acknowledgement for the message reception can be performed:
+        <ul>
+          <li>formally, via an explicit action such as confirming the alert reception by clicking a button, a link or by sending an email, etc.;</li>
+          <li>informally and automatically performed by the system, for example, through the “read receipt” mechanism.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Send message(s) to healthcare workers
+    <ul>
+      <li>Message(s) is(are) disseminated to the front-line health workers for their action and follow-up, in accordance with HHAP operational plans;</li>
+      <li>The guidance can include specific actions to be performed by the health care workers to reduce potential negative impacts for the health system clients and/or advice on how to avoid exposure to occupational heat stress.</li>
+    </ul>
+  </li>
+   <li>Perform actions that reduce occupational heat stress
+    <ul>
+      <li>The health workers are one of the risk groups exposed to occupational heat stress, therefore they should perform the necessary actions to mitigate the negative impact the heat event can have on their mental and physical health.</li>
+    </ul>
+  </li>
+  <li>Experiences heat-related illness
+    <ul>
+      <li>The heat event alert is sent in advance of the onset date of the heat wave. Therefore, there is usually a delay between the date when a heat event alert is received by the health workers and the first impact on the health system is perceived, for example when the clients start experiencing heat-related illnesses and present to healthcare facilities. This delay might represent a couple of days or weeks, depending on how much time in advance the heat event is forecasted and the alert is sent;</li>
+       <li>Prior to starting the clinical investigation, the client is identified and registered in the system. These activities are usually performed using paper registers or existing PCPOSS and are reflected in a DAK as a standalone "Registration" workflow. The "Registration" business process is not detailed in this DAK due to its generic nature.</li>
+    </ul>
+  </li>
+  <li>Evaluate client symptoms against case definition
+        <ul>
+          <li>The health worker evaluates the health status of clients presenting with a heat-related illness. The symptoms are evaluated against heat-related case definition used in the country or region;</li>
+          <li>The health worker takes appropriate actions, according to the HHAP and other clinical guidance;</li>
+          <li>In clinical settings, health care workers should apply clinical judgment to respond appropriately to each patient’s or client’s individual needs. They should understand the health risks associated with extreme heat and know how to take protective measures. If a patient or client appears to be at risk of overheating—such as living in an excessively hot room or home—health care workers should know what actions need to be performed to ensure their immediate safety;</li>
+          <li>Guidance:
+            <ul>
+              <li>Public health advice on preventing health effects of heat: new and updated information for different audiences<sup id="ref6"><a href="#fn6">6</a></sup>;</li>
+              <li>Treatment and Prevention of Heat-Related Illness | New England Journal of Medicine<sup id="ref7"><a href="#fn7">7</a></sup>.</li>
+            </ul>
+          </li>
+        </ul>
+  </li>
+  <li>Is the definition of a heat-related case met?</li>
+  <li>Report case
+        <ul>
+          <li>A case that meets the definition of a heat-related case is reported to the surveillance team;</li>
+          <li>Reporting the cases related to a heat event should be done as soon as they are detected, to allow for a real-time syndromic surveillance. This leads to better response time and actions, for example the surveillance data (daily deaths, daily calls to health information lines, daily ambulance calls, daily emergency room visits, occupancy rate of emergency room beds, etc.) might show increases in morbidity and mortality which might result in a decision to increase the alert level;</li>
+          <li>The reporting of heat-related cases should be done via the HHAS or other digital tools interoperable with the HHAS, such as dedicated surveillance modules.</li>
+        </ul>
+  </li>
+  <li>Continue HHAP response
+        <ul>
+          <li>The HHAP is followed and implemented for each heat event and heat season, until the deactivation point is reached. This usually happens after an assessment of criteria concluding that the meteorological and health conditions are no longer a threat;</li>
+          <li>To account for any “lag effect” in health impacts and ensure that the deactivation of an alert is not premature, some communities continue heat-alert activities for a few days after extreme heat conditions expire;</li>
+          <li>Guidance:
+            <ul>
+              <li>Heat-Health Alerting system: guidance for health and social care providers<sup id="ref8"><a href="#fn8">8</a></sup>;</li>
+              <li>Heat Alert and Response Systems to Protect Health: Best Practices Guidebook<sup id="ref9"><a href="#fn9">9</a></sup>.</li>
+            </ul>
+          </li>
+        </ul>
+   </li>
+<li>Determine if heat event investigation threshold is reached
+    <ul>
+      <li>The impact-based thresholds for heat-related cases are established based on health data reported by healthcare workers. Reaching a pre-determined threshold can be an important criterion when deciding if a heat event investigation needs to be performed. The threshold values should be defined according to country specific guidelines and guidance documents.</li>
+    </ul>
+</li>
+  <li>Heat event investigation needed?</li>
+  <li>Conduct heat event investigation
+    <ul>
+      <li>The surveillance officer performs a heat event investigation, focusing on assessing the impact of the heat event on health and on the effectiveness of the HHAP implementation. The investigation may require the involvement and expertise of an epidemiologist specialised in heat-related cases;</li>
+      <li>Potential indicators that could be included in the analysis:
+        <ul>
+          <li>number of daily heat-related deaths relative to historical baseline;</li>
+          <li>number of daily emergency calls during the heat event;</li>
+          <li>number of daily emergency room visits and hospitalizations during the heat event.</li>
+        </ul>
+      </li>
+      <li>Guidance:
+        <ul>
+          <li>Heat Alert and Response Systems to Protect Health: Best Practices Guidebook<sup id="ref9"><a href="#fn9">9</a></sup>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Compile and submit heat event report
+    <ul>
+      <li>The Surveillance Officer compiles and submits the heat event report based on the data reported by the healthcare workers and the heat event investigation conducted, if any. The reports inform further adjustments to the HHAP by providing relevant information for stakeholders, such as data that better explain the temperature-mortality relationships or the cost-effectiveness of interventions. The development of the HHAP is an iterative process that should include conclusions made based on surveillance and reporting data generated for past heat events;</li>
+      <li>The quality of reports can be influenced by the capacity of the health system to deliver surveillance data;</li>
+      <li>Guidance:
+        <ul>
+          <li>Heat Alert and Response Systems to Protect Health: Best Practices Guidebook<sup id="ref9"><a href="#fn9">9</a></sup>;</li>
+          <li>“9.4 Use of surveillance data and monitoring in HHAPs”, Heat and health in the WHO European Region: updated evidence for effective prevention<sup id="ref10"><a href="#fn10">10</a></sup>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Provide other relevant clinical services
+        <ul>
+          <li>The health worker might provide other relevant clinical and support services, including referrals, if the case is evaluated as not being a heat-related case. The services needed are specific to each client and clinical condition(s).</li>
+        </ul>
+   </li>
+   <li>Receives targeted message(s) for healthcare workers
+    <ul>
+      <li>A trigger event for the implementation of the HHAP operational plan is the reception of targeted message(s) directly by the health care workers. This step implies that the message(s) is(are) directly disseminated to health care workers, without waiting for the information to be sent by the health service managers. This represents a streamlined workflow, based on strong DPI components and reliable distribution mechanisms;</li>
+      <li>The acknowledgement for the message reception can be performed:
+        <ul>
+          <li>formally, via an explicit action such as confirming the alert reception by clicking a button, a link or by sending an email, etc.;</li>
+          <li>informally and automatically performed by the system, for example, through the “read receipt” mechanism.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<p><b>References:</b></p>
+<section id="footnotes">
+  <p id="fn1"><sup>1</sup> <a href="https://www.itu.int/en/ITU-D/Emergency-Telecommunications/Documents/2020/T-REC-X.1303bis-201403-.pdf" target="_blank">SERIES X: DATA NETWORKS, OPEN SYSTEM COMMUNICATIONS AND SECURITY. Secure applications and services – Emergency communications. Common alerting protocol (CAP 1.2). Geneva: International Telecommunication Union; 2014</a> <a href="#ref1">↩</a></p>
+  
+  <p id="fn2"><sup>2</sup> <a href="https://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2-os.html" target="_blank">Common Alerting Protocol Version 1.2, OASIS Standard</a> <a href="#ref2">↩</a></p>
+  
+  <p id="fn3"><sup>3</sup> <a href="https://docs.google.com/document/d/1h_6mtP8WMnyxKyzN_YTI4N2XR9QuTWs3/edit?pli=1&amp;tab=t.0" target="_blank">Common Policies and Practices (Version 03)</a> <a href="#ref3">↩</a></p>
+  
+  <p id="fn4"><sup>4</sup> <a href="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_mACM.pdf" target="_blank">Mobile Alert Communication Management (mACM) IHE profile</a> <a href="#ref4">↩</a></p>
+
+  <p id="fn5"><sup>5</sup> <a href="https://iris.who.int/handle/10665/373581" target="_blank">Classification of digital interventions, services and applications in health: a shared language to describe the uses of digital technology for health, 2nd ed.</a> <a href="#ref5">↩</a></p>
+
+  <p id="fn6"><sup>6</sup> <a href="https://iris.who.int/handle/10665/341580" target="_blank">Public health advice on preventing health effects of heat: new and updated information for different audiences. World Health Organization. Regional Office for Europe. 2011</a> <a href="#ref6">↩</a></p>
+  
+  <p id="fn7"><sup>7</sup> <a href="https://doi.org/10.1056/NEJMcp2210623" target="_blank">Treatment and Prevention of Heat-Related Illness. New England Journal of Medicine. Sorensen Cecilia, Hess Jeremy. 2022. doi: 10.1056/NEJMcp2210623</a> <a href="#ref7">↩</a></p>
+  
+  <p id="fn8"><sup>8</sup> <a href="https://www.gov.uk/guidance/heat-health-alerting-system-guidance-for-health-and-social-care-providers" target="_blank">Heat-Health Alerting system: guidance for health and social care providers. UK Health Security Agency. 2024</a> <a href="#ref8">↩</a></p>
+  
+  <p id="fn9"><sup>9</sup> <a href="https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/ewh-semt/alt_formats/pdf/pubs/climat/response-intervention/response-intervention-eng.pdf" target="_blank">Heat Alert and Response Systems to Protect Health: Best Practices Guidebook. Health Canada, Water, Air and Climate Change Bureau Healthy Environments and Consumer Safety Branch. 2012</a> <a href="#ref9">↩</a></p>
+  
+  <p id="fn10"><sup>10</sup> <a href="https://iris.who.int/handle/10665/339462" target="_blank">Heat and health in the WHO European Region: updated evidence for effective prevention. World Health Organization. Regional Office for Europe. 2021</a> <a href="#ref10">↩</a></p>
+
+</section>
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.l2-hhas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 13:23+0000">2025-12-19</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/l2-hhas/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

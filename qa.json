@@ -1,0 +1,297 @@
+{
+  "phase": "postprocessing",
+  "timestamp": "2025-12-19T13:25:49.183294",
+  "status": "completed",
+  "summary": {
+    "total_successes": 38,
+    "total_warnings": 7,
+    "total_errors": 0,
+    "files_processed_count": 4,
+    "files_expected_count": 1,
+    "files_missing_count": 1,
+    "completion_timestamp": "2025-12-19T13:25:49.191004"
+  },
+  "details": {
+    "successes": [
+      {
+        "message": "Starting generate_dak_api_hub.py post-processing",
+        "timestamp": "2025-12-19T13:25:49.183301"
+      },
+      {
+        "message": "Configured directories - Output: output, OpenAPI: input/images/openapi",
+        "timestamp": "2025-12-19T13:25:49.183304"
+      },
+      {
+        "message": "Loaded existing FHIR IG publisher QA file for merging",
+        "timestamp": "2025-12-19T13:25:49.183377"
+      },
+      {
+        "message": "[preprocessing] Starting update_sushi_config.py preprocessing",
+        "timestamp": "2025-12-19T13:25:49.183466"
+      },
+      {
+        "message": "[preprocessing] Successfully loaded sushi-config.yaml",
+        "timestamp": "2025-12-19T13:25:49.183471"
+      },
+      {
+        "message": "[preprocessing] Found smart-base dependency: smart.who.int.base",
+        "timestamp": "2025-12-19T13:25:49.183475"
+      },
+      {
+        "message": "[preprocessing] dak-api.md already exists with proper content marker",
+        "timestamp": "2025-12-19T13:25:49.183477"
+      },
+      {
+        "message": "[preprocessing] Found directory: input/resources",
+        "timestamp": "2025-12-19T13:25:49.183479"
+      },
+      {
+        "message": "[preprocessing] Found 0 JSON files in input/resources",
+        "timestamp": "2025-12-19T13:25:49.183481"
+      },
+      {
+        "message": "[preprocessing] Ensured directory exists: input/pagecontent",
+        "timestamp": "2025-12-19T13:25:49.183484"
+      },
+      {
+        "message": "[preprocessing] Placeholder generation completed",
+        "timestamp": "2025-12-19T13:25:49.183486",
+        "details": {
+          "valuesets_found": 0,
+          "logical_models_found": 0,
+          "placeholder_files_created": 0
+        }
+      },
+      {
+        "message": "[preprocessing] dak-api.md already exists in pages section",
+        "timestamp": "2025-12-19T13:25:49.183489"
+      },
+      {
+        "message": "[preprocessing] DAK API already exists in menu Indices section",
+        "timestamp": "2025-12-19T13:25:49.183491"
+      },
+      {
+        "message": "[preprocessing] sushi-config.yaml already contains required DAK API entries",
+        "timestamp": "2025-12-19T13:25:49.183496"
+      },
+      {
+        "message": "Merged preprocessing QA report from input/temp/",
+        "timestamp": "2025-12-19T13:25:49.183518"
+      },
+      {
+        "message": "[valueset_schemas] Starting ValueSet schema generation",
+        "timestamp": "2025-12-19T13:25:49.183654"
+      },
+      {
+        "message": "[valueset_schemas] Configured paths - Expansions: output/expansions.json, Output: output",
+        "timestamp": "2025-12-19T13:25:49.183658"
+      },
+      {
+        "message": "[valueset_schemas] Successfully loaded expansions data from output/expansions.json",
+        "timestamp": "2025-12-19T13:25:49.183661"
+      },
+      {
+        "message": "Merged ValueSet schema generation QA report from input/temp/qa_valueset_schemas.json",
+        "timestamp": "2025-12-19T13:25:49.183672"
+      },
+      {
+        "message": "[logical_model_schemas] Script started",
+        "timestamp": "2025-12-19T13:25:49.183792",
+        "details": {
+          "input_directory": "output",
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Input directory found",
+        "timestamp": "2025-12-19T13:25:49.183796",
+        "details": {
+          "directory": "output"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Found 0 StructureDefinition files",
+        "timestamp": "2025-12-19T13:25:49.183799",
+        "details": {
+          "directory": "output",
+          "file_count": 0
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Found 0 logical models",
+        "timestamp": "2025-12-19T13:25:49.183801",
+        "details": {
+          "models_found": 0,
+          "model_names": []
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated 0 Logical Model schemas",
+        "timestamp": "2025-12-19T13:25:49.183803",
+        "details": {
+          "schemas_generated": 0,
+          "schema_files": []
+        }
+      },
+      {
+        "message": "Merged Logical Model schema generation QA report from input/temp/qa_logical_model_schemas.json",
+        "timestamp": "2025-12-19T13:25:49.183810"
+      },
+      {
+        "message": "[jsonld_vocabularies] Script started",
+        "timestamp": "2025-12-19T13:25:49.183960",
+        "details": {
+          "expansions_path": "output/expansions.json",
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Successfully loaded expansions data",
+        "timestamp": "2025-12-19T13:25:49.183965",
+        "details": {
+          "expansions_path": "output/expansions.json"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Found FHIR Bundle",
+        "timestamp": "2025-12-19T13:25:49.183967",
+        "details": {
+          "resourceType": "Bundle"
+        }
+      },
+      {
+        "message": "Merged JSON-LD vocabulary generation QA report from input/temp/qa_jsonld_vocabularies.json",
+        "timestamp": "2025-12-19T13:25:49.183976"
+      },
+      {
+        "message": "Output directory exists with 577 items",
+        "timestamp": "2025-12-19T13:25:49.184805"
+      },
+      {
+        "message": "Output directory contents sampled",
+        "timestamp": "2025-12-19T13:25:49.185168",
+        "details": {
+          "sample_files": [
+            "tbl_vjoin-closed.png",
+            "icon_entry_blue.png",
+            "tbl_bck00001110100.png",
+            "tbl_bck101010.png",
+            "icon_reference.png",
+            "icon-q-url.png",
+            "icon-q-group.png",
+            "indicators-measures.html",
+            "tbl_vjoin_end.png",
+            "tbl_bck0111110.png"
+          ]
+        }
+      },
+      {
+        "message": "Initializing DAK API components",
+        "timestamp": "2025-12-19T13:25:49.185195"
+      },
+      {
+        "message": "All components initialized successfully",
+        "timestamp": "2025-12-19T13:25:49.185242"
+      },
+      {
+        "message": "Starting schema file detection phase",
+        "timestamp": "2025-12-19T13:25:49.185283"
+      },
+      {
+        "message": "Schema detection completed",
+        "timestamp": "2025-12-19T13:25:49.186106",
+        "details": {
+          "valueset_schemas": 0,
+          "logical_model_schemas": 0,
+          "other_schemas": 0
+        }
+      },
+      {
+        "message": "Documentation summary completed",
+        "timestamp": "2025-12-19T13:25:49.189453",
+        "details": {
+          "valueset_schema_docs": 0,
+          "logical_model_schema_docs": 0,
+          "enumeration_endpoints": 0,
+          "jsonld_vocabularies": 0,
+          "openapi_docs": 0
+        }
+      },
+      {
+        "message": "Starting DAK API hub post-processing phase",
+        "timestamp": "2025-12-19T13:25:49.189544"
+      },
+      {
+        "message": "DAK API hub post-processing completed successfully",
+        "timestamp": "2025-12-19T13:25:49.190997",
+        "details": {
+          "total_documentation_pages": 0,
+          "valueset_pages": 0,
+          "logical_model_pages": 0,
+          "enumeration_pages": 0,
+          "jsonld_references": 0,
+          "openapi_pages": 0
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "message": "[preprocessing] Directory not found: fsh-generated/resources",
+        "timestamp": "2025-12-19T13:25:49.183500"
+      },
+      {
+        "message": "[preprocessing] update_sushi_config completed but no changes were made",
+        "timestamp": "2025-12-19T13:25:49.183503"
+      },
+      {
+        "message": "[valueset_schemas] No ValueSet schemas were generated - no ValueSets found in expansions",
+        "timestamp": "2025-12-19T13:25:49.183664"
+      },
+      {
+        "message": "[logical_model_schemas] No logical model schemas were generated (no logical models found)",
+        "timestamp": "2025-12-19T13:25:49.183806"
+      },
+      {
+        "message": "[jsonld_vocabularies] Bundle has no entries",
+        "timestamp": "2025-12-19T13:25:49.183970"
+      },
+      {
+        "message": "[jsonld_vocabularies] No JSON-LD vocabularies were generated (no ValueSets found in expansions)",
+        "timestamp": "2025-12-19T13:25:49.183972"
+      },
+      {
+        "message": "No content items found to document! The DAK API hub will be empty.",
+        "timestamp": "2025-12-19T13:25:49.189503"
+      }
+    ],
+    "errors": [],
+    "files_processed": [
+      {
+        "file": "[preprocessing] sushi-config.yaml",
+        "status": "loaded",
+        "timestamp": "2025-12-19T13:25:49.183507"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/dak-api.md",
+        "status": "exists_valid",
+        "timestamp": "2025-12-19T13:25:49.183510"
+      },
+      {
+        "file": "[preprocessing] sushi-config.yaml",
+        "status": "no_changes_needed",
+        "timestamp": "2025-12-19T13:25:49.183513"
+      },
+      {
+        "file": "[valueset_schemas] output/expansions.json",
+        "status": "loaded",
+        "timestamp": "2025-12-19T13:25:49.183668"
+      }
+    ],
+    "files_expected": [
+      "output"
+    ],
+    "files_missing": [
+      "output"
+    ]
+  }
+}

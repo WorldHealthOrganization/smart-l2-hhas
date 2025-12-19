@@ -1,0 +1,42 @@
+# Generic Personas - SMART L2 HHAS v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Business Requirements**](business-requirements.md)
+* **Generic Personas**
+
+## Generic Personas
+
+### Key settings
+
+The HHAS solution operates at the national level, where centralized infrastructure exists to generate and disseminate alerts across national and sub-national systems. This national infrastructure enables the effective implementation of national and sub-national HHAP operational plans. A national approach also facilitates the standardization of alert formats and protocols, promoting interoperability between different healthcare entities.
+
+### Targeted generic personas
+
+A persona is a depiction of a relevant stakeholder, or end user, of the system.
+
+The targeted personas for a HHAS solution as identified in these specifications are:
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| National Alert Generating Agency | An institution officially designated to produce heatwave and thermal hazard forecasts which are used to inform estimates of heat-health impact. (Ref Main guidance doc WMO- unpublished). They detect heat events and issue alerts based on predefined local thresholds. Nationally recognized Alerting Authorities can be defined in an international registry, as maintained by the World Meteorological Organization (WMO) and International Telecommunication Union (ITU), which includes the types of that organization's authoritative messages; the geographic area for which messages are issued, and Internet addresses of alert sources. | National Meteorological and Hydrological Service (NMHS), Civil Protection Agency, Alert Originator | N/A |
+| National Alert Authorizing Agency | An institution that has been formally designated for approving alerts for dissemination in alignment with relevant policy, procedures, and technology in place to assure appropriate reliability and security of its systems that support alerting functions . May be the same persona as the Alert Generating Agency. National Alert Authorizing Agencies should be registered on the[Register of Alerting Authorities](https://alertingauthority.wmo.int/). | National Meteorological and Hydrological Service, Ministry of Health, Civil Protection Agency, National Public Health Authority, National Health Service, Emergency Management Agency | N/A |
+| Alerting Officer | An official designated to adapt and disseminate public alerts to healthcare facilities and/or healthcare workers, in alignment with predefined protocols or guidance typically based on local frameworks or Heat Health Action Plans. Alert adaptation may include language translation, define registries of recipients, and creating and configuring alerts to contain locally relevant information.Multiple local Alert Aggregators may exist, each adapting guidance and procedures to suit regional or community-specific needs. | Alert Aggregator System Monitor, Ministry of Health Official, Local Civil Protection Official, Local Health Authorities Official, Regional Health Agencies Official, Municipality Official | N/A |
+| Health Service Manager | Health Service Managers plan, direct, coordinate and evaluate the provision of clinical and community health services at the health-care facility. They provide overall direction, policy standards and operational criteria for the units they manage, including oversight responsible for receiving the heatwave alert and initiating operationalization of local heat event plans within the healthcare facility context.They monitor the use of health services and resources at the health-care facility. They liaise with other health and welfare service providers, boards (including community boards) and funding bodies to coordinate the provision of services. | Facility Manager, Health facility administrator, Medical administrator, Clinical director, Director of nursing, Community health care coordinator | 1342 (Health service managers) |
+| Healthcare worker | A health care worker is any individual engaged in the provision of health-related services aimed at promoting, maintaining, or restoring physical, mental, and social well-being. This includes a broad range of roles - from clinical diagnosis and treatment to personal care and psychosocial support - delivered across various settings and levels of specialization. Health care workers may operate independently or under supervision.Healthcare workers are responsible for receiving the heat event alert and responding appropriately given predefined protocols or guidance typically based on local frameworks or Heat Health Action Plans. | Generalist medical practitioner, physician, family doctor, specialist medical practitioner, health care assistant, nurse, social worker and counselling professional, community health worker | 2211 (Generalist medical practitioners)2212 (Specialist medical practitioners)5321 (Health care assistants)2221 (Nursing professionals)2635 (Social work and counselling professionals)3253 (Community health workers), 3259 (Health associate professionals not classified elsewhere) |
+
+The specific roles and demographic profiles of the personas will vary depending on the setting. Generic personas "Health Service Manager" and "Healthcare worker" are based on WHO core competencies and credentials[2](#fn:2).
+
+### Related personas
+
+In addition to the targeted personas detailed above, there are secondary personas within the context of a Heat-Health Alert System, such as **Surveillance Officer** and **Client**. However, these were not identified as the central personas for the workflows and data content detailed in this L2 specifications. The related personas are listed in the table below.
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Client | In the context of this document, a client is a person who experiences heat-related illness(es) and is given medical care. The client might present with mild, moderate or severe symptoms. | Patient, health service user, individual seeking care. | N/A |
+| Surveillance officer | Surveillance officers coordinate collection and verification of data sent by healthcare workers and healthcare facilities. They analyze syndromic surveillance data to monitor trends, to identify response actions, to evaluate the impact of heat events and the effectiveness of HHAP implementation. They also communicate findings to higher level health authorities and guide response measures. Different geographic or administrative regions such as national or sub-national levels could have dedicated epidemiologists. | District surveillance officer, regional surveillance officer, national surveillance officer, public health officer. | 3259 - Health Associate Professionals Not Elsewhere Classified |
+
+**References**
+
+1. [Classifying health workers: Mapping occupations to the international standard classification. Geneva: World Health Organization; 2019](https://cdn.who.int/media/docs/default-source/health-workforce/dek/classifying-health-workers.pdf). [↩](#fnref:1) [↩2](#fnref:1:1)
+1. [International Standard Classification of Occupations - Structure, group definitions and correspondence tables](https://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/publication/wcms_172572.pdf). [↩](#fnref:2)
+

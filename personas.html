@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Generic Personas - SMART L2 HHAS v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.3"}
+    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting and implementing</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="health-interventions.html">Health Interventions</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="scheduling-logic.html">Scheduling Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+      <li>
+        <a href="system-requirements.html">System Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART L2 HHAS</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='business-requirements.html'><b>Business Requirements</b></a></li><li><b>Generic Personas</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART L2 HHAS, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/WorldHealthOrganization/smart-l2-hhas/tree/main'>https://github.com/WorldHealthOrganization/smart-l2-hhas/tree/main</a> and changes regularly. See the <a href='http://smart.who.int/l2-hhas/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Generic Personas</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#key-settings" id="markdown-toc-key-settings">Key settings</a></li>
+  <li><a href="#targeted-generic-personas" id="markdown-toc-targeted-generic-personas">Targeted generic personas</a></li>
+  <li><a href="#related-personas" id="markdown-toc-related-personas">Related personas</a></li>
+</ul>
+
+</div>
+
+<h3 id="key-settings">Key settings</h3>
+<p>The HHAS solution operates at the national level, where centralized infrastructure exists to generate and disseminate alerts across national and sub-national systems. This national infrastructure enables the effective implementation of national and sub-national HHAP operational plans. A national approach also facilitates the standardization of alert formats and protocols, promoting interoperability between different healthcare entities.</p>
+
+<h3 id="targeted-generic-personas">Targeted generic personas</h3>
+
+<p>A persona is a depiction of a relevant stakeholder, or end user, of the system.</p>
+
+<p>The targeted personas for a HHAS solution as identified in these specifications are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Different names</th>
+      <th>International Standard for Classification of Occupations code<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>National Alert Generating Agency</td>
+      <td>An institution officially designated to produce heatwave and thermal hazard forecasts which are used to inform estimates of heat-health impact. (Ref Main guidance doc WMO- unpublished). They detect heat events and issue alerts based on predefined local thresholds. Nationally recognized Alerting Authorities can be defined in an international registry, as maintained by the World Meteorological Organization (WMO) and International Telecommunication Union (ITU), which includes the types of that organization's authoritative messages; the geographic area for which messages are issued, and Internet addresses of alert sources.</td>
+      <td>National Meteorological and Hydrological Service (NMHS), Civil Protection Agency, Alert Originator</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>National Alert Authorizing Agency</td>
+      <td>An institution that has been formally designated for approving alerts for dissemination in alignment with relevant policy, procedures, and technology in place to assure appropriate reliability and security of its systems that support alerting functions . May be the same persona as the Alert Generating Agency. National Alert Authorizing Agencies should be registered on the <a href="https://alertingauthority.wmo.int/">Register of Alerting Authorities</a>.</td>
+      <td>National Meteorological and Hydrological Service, Ministry of Health, Civil Protection Agency, National Public Health Authority, National Health Service, Emergency Management Agency</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Alerting Officer</td>
+      <td>An official designated to adapt and disseminate public alerts to healthcare facilities and/or healthcare workers, in alignment with predefined protocols or guidance typically based on local frameworks or Heat Health Action Plans. Alert adaptation may include language translation, define registries of recipients, and creating and configuring alerts to contain locally relevant information.<br /> Multiple local Alert Aggregators may exist, each adapting guidance and procedures to suit regional or community-specific needs.</td>
+      <td>Alert Aggregator System Monitor, Ministry of Health Official, Local Civil Protection Official, Local Health Authorities Official, Regional Health Agencies Official, Municipality Official</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Health Service Manager</td>
+      <td>Health Service Managers plan, direct, coordinate and evaluate the provision of clinical and community health services at the health-care facility. They provide overall direction, policy standards and operational criteria for the units they manage, including oversight responsible for receiving the heatwave alert and initiating operationalization of local heat event plans within the healthcare facility context. <br /> They monitor the use of health services and resources at the health-care facility. They liaise with other health and welfare service providers, boards (including community boards) and funding bodies to coordinate the provision of services.</td>
+      <td>Facility Manager, Health facility administrator, Medical administrator, Clinical director, Director of nursing, Community health care coordinator</td>
+      <td>1342 (Health service managers)</td>
+    </tr>
+    <tr>
+      <td>Healthcare worker</td>
+      <td>A health care worker is any individual engaged in the provision of health-related services aimed at promoting, maintaining, or restoring physical, mental, and social well-being. This includes a broad range of roles - from clinical diagnosis and treatment to personal care and psychosocial support - delivered across various settings and levels of specialization. Health care workers may operate independently or under supervision.<br /> Healthcare workers are responsible for receiving the heat event alert and responding appropriately given predefined protocols or guidance typically based on local frameworks or Heat Health Action Plans.</td>
+      <td>Generalist medical practitioner, physician, family doctor, specialist medical practitioner, health care assistant, nurse, social worker and counselling professional, community health worker</td>
+      <td>2211 (Generalist medical practitioners) <br /> 2212 (Specialist medical practitioners) <br /> 5321 (Health care assistants) <br /> 2221 (Nursing professionals) <br /> 2635 (Social work and counselling professionals) <br /> 3253 (Community health workers), 3259 (Health associate professionals not classified elsewhere)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The specific roles and demographic profiles of the personas will vary depending on the setting. Generic personas "Health Service Manager" and "Healthcare worker" are based on WHO core competencies and credentials<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<h3 id="related-personas">Related personas</h3>
+
+<p>In addition to the targeted personas detailed above, there are secondary personas within the context of a Heat-Health Alert System, such as <em>Surveillance Officer</em> and <em>Client</em>. However, these were not identified as the central personas for the workflows and data content detailed in this L2 specifications. The related personas are listed in the table below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Different names</th>
+      <th>International Standard for Classification of Occupations code<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Client</td>
+      <td>In the context of this document, a client is a person who experiences heat-related illness(es) and is given medical care. The client might present with mild, moderate or severe symptoms.</td>
+      <td>Patient, health service user, individual seeking care.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Surveillance officer</td>
+      <td>Surveillance officers coordinate collection and verification of data sent by healthcare workers and healthcare facilities. They analyze syndromic surveillance data to monitor trends, to identify response actions, to evaluate the impact of heat events and the effectiveness of HHAP implementation. They also communicate findings to higher level health authorities and guide response measures. Different geographic or administrative regions such as national or sub-national levels could have dedicated epidemiologists.</td>
+      <td>District surveillance officer, regional surveillance officer, national surveillance officer, public health officer.</td>
+      <td>3259 - Health Associate Professionals Not Elsewhere Classified</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>References</strong></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://cdn.who.int/media/docs/default-source/health-workforce/dek/classifying-health-workers.pdf">Classifying health workers: Mapping occupations to the international standard classification. Geneva: World Health Organization; 2019</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/publication/wcms_172572.pdf">International Standard Classification of Occupations - Structure, group definitions and correspondence tables</a>. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.l2-hhas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 13:23+0000">2025-12-19</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/l2-hhas/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

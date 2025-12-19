@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - SMART L2 HHAS v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting and implementing</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="health-interventions.html">Health Interventions</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="scheduling-logic.html">Scheduling Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+      <li>
+        <a href="system-requirements.html">System Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART L2 HHAS</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART L2 HHAS, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/WorldHealthOrganization/smart-l2-hhas/tree/main'>https://github.com/WorldHealthOrganization/smart-l2-hhas/tree/main</a> and changes regularly. See the <a href='http://smart.who.int/l2-hhas/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/l2-hhas/ImplementationGuide/smart.who.int.l2-hhas<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/l2-hhas/ImplementationGuide/smart.who.int.l2-hhas"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/l2-hhas/ImplementationGuide/smart.who.int.l2-hhas|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-12-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">L2hhas</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#l1-narrative-guidelines" id="markdown-toc-l1-narrative-guidelines">L1 Narrative guidelines</a></li>
+  <li><a href="#l2-operational-guidelines" id="markdown-toc-l2-operational-guidelines">L2 Operational guidelines</a></li>
+  <li><a href="#l3-machine-readable-guidelines" id="markdown-toc-l3-machine-readable-guidelines">L3 Machine readable guidelines</a></li>
+  <li><a href="#l4-executable-guidelines" id="markdown-toc-l4-executable-guidelines">L4 Executable guidelines</a></li>
+  <li><a href="#l5-dynamic-guidelines" id="markdown-toc-l5-dynamic-guidelines">L5 Dynamic guidelines</a></li>
+  <li><a href="#contact-us" id="markdown-toc-contact-us">Contact Us</a></li>
+  <li><a href="#license" id="markdown-toc-license">License</a></li>
+  <li><a href="#providing-feedback" id="markdown-toc-providing-feedback">Providing Feedback</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+</ul>
+
+</div>
+<!---Note: Please keep the div below in the main branch and when publishing the pre-release version of the DAK (v0.9.9). For official published versions, please delete the div from the file.-->
+<div class="stu-note">
+<p> This SMART Guidelines L2 specifications and set of implementation tools are still undergoing development. </p>
+<p> Content is for demonstration purposes only. </p>
+</div>
+
+<h3 id="introduction">Introduction</h3>
+<p>Extreme heat events globally have led to a rise in related mortality and morbidity, but the adverse health effects of hot weather and heatwaves are largely preventable. Prevention requires a portfolio of actions at different levels: from health system preparedness coordinated with meteorological early warning systems to timely public and medical advice. These actions can be integrated in a defined Heat-Health Action Plan (HHAP). 
+Important elements for the successful implementation of HHAP are the heat-related health information plans and operational plans for health care and social services within the health system. A heat-related health information plan defines what is communicated, to whom and when, including the specific target audience, the means of communication, as well as the contents and time the information is to be delivered. An operational plan provides clear guidance to healthcare workers and healthcare facilities about what actions need to be taken, linked to the heat-health warnings issued. Together, these are used to ensure that all relevant parties have the information they need to prepare the health system to respond to heat events.
+Alert messages work best when tailored and targeted to their intended audiences, including healthcare workers.  These messages encompass not only the types of information provided, but also ensuring the correct healthcare system actors and systems, often dictated by the impact area of the heat event, are mobilised in a timely manner.
+To augment existing "last mile" channels of communication to healthcare workers, digital technology can be leveraged to ensure more efficient, effectively and targeted messaging. In particular, existing standards such as the Common Alerting Protocol (CAP) from the World Metrological Organization (WMO) - which is designed to provide a consistent format for emergency alerting across various technologies - can be harnessed in conjunction with a wide range of internet, short message systems (SMS), or application-based solutions, to optimize the healthcare response to heat events.</p>
+
+<h4 id="purpose-of-this-ig">Purpose of this IG</h4>
+<p>This IG lays out business specifications for a Heat-Health Alert System (HHAS), where one or several CAP-formatted alerts can be sent to targeted healthcare worker recipients, and can record the outcomes of any human interactions upon receipt of the alert. The IG leverages existing free and open standards and is driven by use cases and requirements for effectively alerting the healthcare workers that will be impacted by a heat event.
+As Member States are increasingly looking to adopt digital solutions as part of the implementation or iteration of a HHAP, this document provides a baseline set of requirements for a HHAS solution that is interoperable with other standards-based health solutions. With the baseline requirements met, it is also anticipated that Member States will further adapt and extend these specifications to suit their needs, most likely working with a local technology partner of their choice to implement a digital solution.
+This document is therefore software-agnostic and provides a starting point for Member States to design, develop and deploy a HHAS digital and data information systems solution for national use in whichever format best suits their needs.</p>
+
+<h4 id="target-audience">Target audience</h4>
+
+<p>The primary target audience of this document is the national authorities tasked with implementing or overseeing their country's HHAP, in particular those coordinating the heat health information plans, managing digital systems, and designing and implementing operational plans for health care and social services within the health system. The document may also be useful to government partners such as local businesses, international organizations, non-governmental organizations and trade associations, that may be required to support Member States in developing or deploying a HHAS solution within existing data systems and technical resources.</p>
+
+<h4 id="scope">Scope</h4>
+<h5 id="in-scope">In Scope</h5>
+<p>This IG specifically focuses on how to design the integration of health information systems from the climate and the health sectors to interoperate and function in coordination to digitally transmit a heat event CAP alert to healthcare workers and facilities. The approach is based on the required data to identify and target specific healthcare workers, leveraging facility location and/or healthcare worker registries. This document describes a specification for such a CAP Messaging system, including:</p>
+<ul>
+  <li>Use cases arising from the operation of a HHAS, including the sequence of steps involved in executing a HHAS solution;</li>
+  <li>A core data set with data elements and digital services that can be leveraged by HHAS to identify and target specific healthcare workers, such as facility location and/or healthcare worker registries, as well as health guidance to healthcare workers;</li>
+  <li>Approaches for implementing a HHAS, including considerations for integrating with existing emergency response and health information systems, as well as existing communication platforms.</li>
+</ul>
+
+<h5 id="out-of-scope">Out of Scope</h5>
+<p>Aspects that are considered out of the scope of this work are:</p>
+<ul>
+  <li>Digital documentation on the manner of production and publication of the CAP message. These are assumed to be generated by established Member State meteorological, emergency and/or health services, and disseminated through existing national or regional warning systems in a CAP format;</li>
+  <li>Detailed protocols for emergency medical response or hospital surge capacity management. These are addressed in existing healthcare emergency preparedness plans;</li>
+  <li>The specific content of the heat-health guidance to healthcare workers and healthcare facilities. This will vary by region and national context and should be developed by relevant public health authorities;</li>
+  <li>The process of training healthcare workers to use the HHAS;</li>
+  <li>Delivering alert messages to general public;</li>
+  <li>Considerations for monitoring and evaluation of HHAS roll-out and use.</li>
+</ul>
+
+<h4 id="assumptions">Assumptions</h4>
+<p>This document operates under the assumption that Member States can utilize Hazard Early Warning Systems (HEWS) to generate CAP-compliant heat event alerts as a foundational approach. This acknowledges the immediate need for scalable solutions while recognizing that integrating impact-based data into CAP for enhanced public health protection is a longer-term objective. For additional details:</p>
+<ul>
+  <li>CAP is a standardized data interchange that is open-source and XML-based, with clearly defined elements, and the ability to support data exchange across multiple dissemination channels, allowing a single input to generate multiple outputs for downstream dissemination. CAP-enabled systems can therefore facilitate easier integration with other national and international information systems;</li>
+  <li>HHAPs Guidelines include the inclusion of early warning systems as crucial components in protecting public health during extreme heat events. These systems, encompassing both hazard-based (HEWS) and impact-based (Heat Health Warning Systems - HHWS) approaches, aim to provide timely alerts to mitigate heat-related risks. Hazard warnings focus on the intrinsic characteristics of the impending event, such as heatwave intensity (temperature, humidity). Impact warnings, conversely, translate these characteristics into potential consequences for people, infrastructure, and livelihoods (i.e. a 'thermal temperature' calculation which measures the health risks of how heat directly affects people). While impact warnings offer more actionable information, hazard warnings remain more accessible, particularly for resource-constrained countries, which requires additional coordination and data;</li>
+  <li>The categorization of heat events within CAP necessitates further development. CAP supports categorization of events by using Event Type Codes. Coded values, if formatted properly, can alleviate the dimension of language as an issue to resolve when processing an alert. Applying a code to each item in a list is desirable for automated systems and systems that deal across languages. This codification further enables advanced processing of alerting systems and automations. For example, a coded value for a pre-defined event type allows consumers to have a pre-defined response to any alert message associated with that event type;</li>
+  <li>Currently, the Event Type Codes in CAP are 'Temperature' as a broad category (Tier I) and 'Heat wave' as a more specific (Tier II) category. This is a challenge as heat events are diverse in their categorization, and evidence suggests events be differentiated based on temperature indicators, thermal (heat-stress) indicators, and heatwave-intensity indices. Countries differ in how these various heat events are defined, calculated, and their implications. As such, the current absence of standardization in heat event categorization necessitates further development of the protocol, where 'Temperature' and 'Heat-Wave' require alternative and additional specifications;</li>
+  <li>The generic term heat event is used in the current documentation to encompass the various categories, given the calculations required to trigger the heat event are out of scope for this documentation. Ultimately, regardless of the term assigned to the event or alert, the social responsibility of an alerting authority is to effectively communicate the hazards and concerns associated with a subject event. In each case, representatives of the alerting authorities that chose these terms felt the chosen term was the correct one for that situation.</li>
+</ul>
+
+<p>The requirements outlined are intended to allow for HHAS solutions to meet the needs of a country's HHAP, while still being usable in other national and local contexts.<br /></p>
+
+<p>The technological specification for a HHAS solution is intended to be flexible and adaptable for each Member State to meet its diverse public health needs as well as the diverse needs of individuals around the world. It is assumed that there is no one-size-fits-all solution, and so the specification must remain flexible and software-agnostic, while minimizing the amount of digital infrastructure required.<br /></p>
+
+<p>An overarching assumption is that multiple digital products will be implemented to operationalize the requirements described in this document. This allows for support of local and sustainable development so that Member States have a broad choice of appropriate solutions without excluding compliant products from any source.<br /></p>
+
+<p>The following assumptions are made about Member States' responsibilities as foundational aspects of setting up and running a HHAS solution:</p>
+<ul>
+  <li>Member States have access to reliable and accurate <strong>meteorological and/or emergency services</strong> capable of generating and disseminating timely heat-wave forecasts and warnings;</li>
+  <li>Member States possess or are in the process of developing <strong>functional health information systems</strong> that can store and manage relevant data, including healthcare worker registries, health facility databases, and patient records.</li>
+  <li>Member States <strong>maintain up-to-date registries</strong> of healthcare workers, including their contact information, specializations, and locations, as well as comprehensive databases of healthcare facilities with their capacities and services;</li>
+  <li>Member States have access to <strong>reliable and accessible communication infrastructure</strong>, including internet connectivity, mobile networks, and other communication channels, to enable the dissemination of alerts and information;</li>
+  <li>Member States have established or are developing <strong>comprehensive HHAPs</strong> that outline clear roles, responsibilities, and procedures for responding to heat events;</li>
+  <li>Member States have established <strong>mechanisms for coordination</strong> between meteorological services, public health authorities, and healthcare providers;</li>
+  <li>Member States have the <strong>capacity to maintain, update, and support</strong> the HHASs, including technical expertise and resources;</li>
+  <li>Member states will provide <strong>adequate training</strong> to relevant personnel including healthcare workers on the use of the HHAS system and heat-related health protocols.</li>
+</ul>
+
+<h3 id="l1-narrative-guidelines">L1 Narrative guidelines</h3>
+<p>References used in this implementation guide are listed below:</p>
+
+<ul>
+  <li><a href="https://iris.who.int/handle/10665/339462">Heat and health in the WHO European Region: updated evidence for effective prevention. World Health Organization. Regional Office for Europe. 2021</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/346259">Updating the evidence related to heat-health action planning: 21-22 November 2018, Bonn, Germany: meeting report. World Health Organization. Regional Office for Europe. 2019</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/107935">Improving public health responses to extreme weather/heat-waves: EuroHEAT: technical summary. World Health Organization. Regional Office for Europe. 2009</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/378102">Report of a scoping meeting for the selection of indicators to monitor the impact of extreme heat on maternal, newborn and child health: Geneva, Switzerland, 24-25 April 2023. World Health Organization. 2024</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/341580">Public health advice on preventing health effects of heat: new and updated information for different audiences. World Health Organization. Regional Office for Europe. 2011</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/107934">EuroHEAT: improving public health responses to extreme weather/heat-waves: summary for policy-makers. World Health Organization. Regional Office for Europe. 2009</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/107888">Heat-health action plans: guidance. World Health Organization. Regional Office for Europe. 2009</a>;</li>
+  <li><a href="https://iris.who.int/handle/10665/107552">Heat-waves: risks and responses. World Health Organization. Regional Office for Europe. 2004</a>.</li>
+</ul>
+
+<p>Other, non-WHO, references used in this implementation guide are listed below:</p>
+<ul>
+  <li><a href="https://assets.publishing.service.gov.uk/media/67f3aeaed3f1efd2ce2ab897/WHA_User_Guide.pdf">User guide Weather-health alerting system. UK Health Security Agency. Met Office. 2025</a>;</li>
+  <li><a href="https://doi.org/10.1056/NEJMcp2210623">Treatment and Prevention of Heat-Related Illness. New England Journal of Medicine. Sorensen Cecilia, Hess Jeremy. 2022. doi: 10.1056/NEJMcp2210623</a>;</li>
+  <li><a href="https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/ewh-semt/alt_formats/pdf/pubs/climat/response-intervention/response-intervention-eng.pdf">Heat Alert and Response Systems to Protect Health: Best Practices Guidebook. Health Canada, Water, Air and Climate Change Bureau Healthy Environments and Consumer Safety Branch. 2012</a>;</li>
+  <li><a href="https://www.researchgate.net/publication/228242993_Common_Alerting_Protocol_Message_Broker_for_Last-Mile_Hazard_Warning_System_in_Sri_Lanka_An_Essential_Component">Common Alerting Protocol Message Broker for Last-Mile Hazard Warning System in Sri Lanka: An Essential Component. SSRN Electronic Journal. 10.2139/ssrn.1568001. 2007</a>.</li>
+</ul>
+
+<h3 id="l2-operational-guidelines">L2 Operational guidelines</h3>
+
+<ul>
+  <li>
+    <p>Implementation tools:</p>
+
+    <ul>
+      <li>
+        <p><a href="https://worldhealthorganization.github.io/smart-l2-hhas/business-processes.html">Link to the editable files of business processes, in .bpmn format</a></p>
+      </li>
+      <li>
+        <p><a href="https://worldhealthorganization.github.io/smart-l2-hhas/dictionary.html">Link to core data dictionary</a></p>
+      </li>
+      <li>
+        <p>Decision-support logic is not available at the moment.</p>
+      </li>
+      <li>
+        <p>Scheduling logic is not available at the moment.</p>
+      </li>
+      <li>
+        <p>Indicators are not available at the moment.</p>
+      </li>
+      <li>
+        <p><a href="https://worldhealthorganization.github.io/smart-l2-hhas/system-requirements.html">Link to functional and non functional requirements</a>.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="l3-machine-readable-guidelines">L3 Machine readable guidelines</h3>
+<p>The L3 FHIR Implementation Guide for the HHAS L2 SMART Guidelines is yet to be published. Links will be published here as soon as they're available.</p>
+
+<h3 id="l4-executable-guidelines">L4 Executable guidelines</h3>
+<p>Reference implementations representing the L4 layer for the the HHAS L2 Guidelines are not yet available. Links will be published here as soon as they're available.</p>
+
+<h3 id="l5-dynamic-guidelines">L5 Dynamic guidelines</h3>
+<p>Content representing the L5 layer for the HHAS L2 SMART Guidelines are not yet available. Links will be published here as soon as they're available.</p>
+
+<h3 id="contact-us">Contact Us</h3>
+<p>Please let us know about your experience in using this L2 specifications and questions you may have by contacting us at <a href="mailto:SMART@who.int?subject = HHAS L2 Feedback">SMART@who.int</a></p>
+
+<h3 id="license">License</h3>
+<p>This work is licensed under a
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/igo/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License</a>.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/igo/"><img src="https://i.creativecommons.org/l/by-nc-sa/3.0/igo/88x31.png" alt="CC BY 3.0" /></a></p>
+
+<p>For more license details please see the <a href="https://worldhealthorganization.github.io/smart-l2-hhas/license.html">license page</a>.</p>
+
+<h3 id="providing-feedback">Providing Feedback</h3>
+
+<p>
+    Feedback specific to this specification can provided through:
+  </p>
+<ul>
+    <li>Clicking on one of the Feedbacks link to the right of any section header</li>
+    <li>Sending an email to <a href="mailto:SMART@who.int?subject = HHAS L2 Feedback">SMART@who.int</a></li>
+    <li>Creating an issue on GitHub <a href="https://github.com/WorldHealthOrganization/l2-hhas">l2-hhas repository</a></li>
+  </ul>
+
+<!---Note: Please keep the dsiclaimer note below in the main branch and when publishing the pre-release version of the DAK (v0.9.9). For official published versions, please delete the note from the file.-->
+<h3 id="disclaimer">Disclaimer</h3>
+<p>The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.</p>
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.l2-hhas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 13:23+0000">2025-12-19</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/l2-hhas/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

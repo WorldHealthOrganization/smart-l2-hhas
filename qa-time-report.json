@@ -1,0 +1,423 @@
+{
+  "date" : "Fri, 19 Dec, 2025 13:23:53 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-smart.who.int.l2-hhas.json",
+      "size" : 7782,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 71,
+          "length" : 57
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 71,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 71,
+          "length" : 238
+        },
+        {
+          "activity" : "validate",
+          "start" : 72,
+          "length" : 5278
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 90
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 96
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 88,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "/input/includes/dmn2html.xslt",
+      "size" : 6208,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/includes/menu.xml",
+      "size" : 4365
+    },
+    {
+      "name" : "/input/data/features.yaml",
+      "size" : 88
+    },
+    {
+      "name" : "/input/pagecontent/deployment.md",
+      "size" : 0
+    },
+    {
+      "name" : "/input/pagecontent/business-requirements.md",
+      "size" : 1245,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/testing.md",
+      "size" : 2733
+    },
+    {
+      "name" : "/input/pagecontent/non-functional-requirements.md",
+      "size" : 528
+    },
+    {
+      "name" : "/input/pagecontent/trust_domain.md",
+      "size" : 284,
+      "processes" : [
+        {
+          "activity" : "scan",
+          "start" : 71,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/concepts.md",
+      "size" : 1929
+    },
+    {
+      "name" : "/input/pagecontent/business-process.md",
+      "size" : 11
+    },
+    {
+      "name" : "/input/pagecontent/system-actors.md",
+      "size" : 1910,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/scenarios.md",
+      "size" : 10520,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/sequence-diagrams.md",
+      "size" : 109
+    },
+    {
+      "name" : "/input/pagecontent/data-models-and-exchange.md",
+      "size" : 3567
+    },
+    {
+      "name" : "/input/pagecontent/references.md",
+      "size" : 3822,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/trust_domain_use_cases.md",
+      "size" : 0
+    },
+    {
+      "name" : "/input/pagecontent/license.md",
+      "size" : 4008
+    },
+    {
+      "name" : "/input/pagecontent/codings.md",
+      "size" : 807
+    },
+    {
+      "name" : "/input/pagecontent/maps.md",
+      "size" : 109
+    },
+    {
+      "name" : "/input/pagecontent/health-interventions.md",
+      "size" : 1982,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/personas.md",
+      "size" : 7226
+    },
+    {
+      "name" : "/input/pagecontent/changes.md",
+      "size" : 409
+    },
+    {
+      "name" : "/input/pagecontent/adapting.md",
+      "size" : 3227
+    },
+    {
+      "name" : "/input/pagecontent/system-requirements.md",
+      "size" : 1253,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/business-processes.md",
+      "size" : 24752,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/indicators.md",
+      "size" : 110,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/scheduling-logic.md",
+      "size" : 112
+    },
+    {
+      "name" : "/input/pagecontent/indicators-measures.md",
+      "size" : 587
+    },
+    {
+      "name" : "/input/pagecontent/indices.md",
+      "size" : 0
+    },
+    {
+      "name" : "/input/pagecontent/dak-api.md",
+      "size" : 212
+    },
+    {
+      "name" : "/input/pagecontent/security-privacy.md",
+      "size" : 296
+    },
+    {
+      "name" : "/input/pagecontent/trust_domain_specifications.md",
+      "size" : 0
+    },
+    {
+      "name" : "/input/pagecontent/reference-implementations.md",
+      "size" : 361
+    },
+    {
+      "name" : "/input/pagecontent/dictionary.md",
+      "size" : 957,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/dependencies.md",
+      "size" : 1815
+    },
+    {
+      "name" : "/input/pagecontent/decision-logic.md",
+      "size" : 111
+    },
+    {
+      "name" : "/input/pagecontent/downloads.md",
+      "size" : 237
+    },
+    {
+      "name" : "/input/pagecontent/trust_domain_policy.md",
+      "size" : 0
+    },
+    {
+      "name" : "/input/pagecontent/transactions.md",
+      "size" : 436
+    },
+    {
+      "name" : "/input/pagecontent/functional-requirements.md",
+      "size" : 496,
+      "processes" : [
+        {
+          "activity" : "generateValidationPack",
+          "start" : 88,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/feedback.md",
+      "size" : 517,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/index.md",
+      "size" : 17844
+    },
+    {
+      "name" : "/input/pagecontent/test-data.md",
+      "size" : 461,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/dictionary",
+      "size" : 0,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/dictionary/HHAS L2_core data dictionary.xlsx",
+      "size" : 139742
+    },
+    {
+      "name" : "/input/decision-logic",
+      "size" : 0
+    },
+    {
+      "name" : "/input/business-processes",
+      "size" : 0
+    },
+    {
+      "name" : "/input/business-processes/HHAS_A.bpmn",
+      "size" : 13171
+    },
+    {
+      "name" : "/input/business-processes/Overview_HHAS.svg",
+      "size" : 9542
+    },
+    {
+      "name" : "/input/business-processes/HHAS_B.bpmn",
+      "size" : 17432
+    },
+    {
+      "name" : "/input/business-processes/Overview_HHAS.bpmn",
+      "size" : 4294,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/business-processes/HHAS_B.svg",
+      "size" : 46846
+    },
+    {
+      "name" : "/input/business-processes/HHAS L2_BPMN files.zip",
+      "size" : 20556
+    },
+    {
+      "name" : "/input/business-processes/HHAS_A.svg",
+      "size" : 35184
+    },
+    {
+      "name" : "/input/scheduling-logic",
+      "size" : 0
+    },
+    {
+      "name" : "/input/indicators",
+      "size" : 0
+    },
+    {
+      "name" : "/input/system-requirements",
+      "size" : 0
+    },
+    {
+      "name" : "/input/system-requirements/HHAS L2_functional and non-functional requirements.xlsx",
+      "size" : 101052
+    },
+    {
+      "name" : "/input/testing",
+      "size" : 0
+    },
+    {
+      "name" : "/template/config",
+      "size" : 0
+    },
+    {
+      "name" : "/template/config/_config.yml",
+      "size" : 140
+    },
+    {
+      "name" : "/input/images",
+      "size" : 0,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/temp/pages/_includes/artifacts.xml",
+      "size" : 630
+    }
+  ]
+}

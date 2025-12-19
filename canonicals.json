@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "smart.who.int.l2-hhas",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/l2-hhas/ImplementationGuide/smart.who.int.l2-hhas",
+    "version" : "0.1.0",
+    "name" : "L2hhas"
+  }
+]
